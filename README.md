@@ -25,29 +25,11 @@
 -
 -
 
-### 2.2 ESCOPO DO PROJETO
+### 2.2 TECNOLOGIAS UTILIZADAS
 
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
+- Netbeans - IDE
+- Java
+- MySql
 
 # 3.0 MATRIZ DE RISCO
 
