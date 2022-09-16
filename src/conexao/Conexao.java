@@ -14,7 +14,7 @@ import java.util.logging.Logger;
  */
 public class Conexao {
     Connection cn = null;
-    String url = "";
+    String url = "jdbc:mysql://localhost:3306/a3_Livraria?user=root&password=";
     public Connection conectarBD(){
     
         try {
