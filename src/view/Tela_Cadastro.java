@@ -133,7 +133,7 @@ public class Tela_Cadastro extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Apoio a = new Apoio();
-        a.create();
+        a.create(Campo_Nome(),Campo_Email(),Campo_Senha());
     }//GEN-LAST:event_jButton1ActionPerformed
 
     public static void main(String args[]) {
@@ -181,4 +181,23 @@ public class Tela_Cadastro extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 
+    public String Campo_Nome() {
+        String nome = CampoNome.getText();
+        return nome;
+    }
+
+    public String Campo_Email() {
+        String email = CampoEmail.getText();
+        return email;
+    }
+
+    public String Campo_Senha() {
+        String senha = CampoSenha.getText();
+        return senha;
+    }
+
+    public void LimpaCampos(){
+    CampoSenha.getText();
+    }
 }
+
