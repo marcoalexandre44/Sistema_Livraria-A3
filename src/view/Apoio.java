@@ -9,19 +9,14 @@ import DTO.Usuario;
 
 public class Apoio {
 
-    public static void create() {
-        Tela_Cadastro tl = new Tela_Cadastro();
-        
-        String nome = tl.CampoNome.getText();
-        String email = tl.CampoEmail.getText();
-        String senha = tl.CampoSenha.getText();
+    public static void create(String nome,String email, String senha) {
         
         Usuario usuario = new Usuario();
 
-        usuario.setNome_usuario(nome);
+        usuario.setNome_usuario(nome);   
         usuario.setEmail_usuario(email);
         usuario.setSenha_senha(senha);
-
+      
         UsuarioDAO DAO = new UsuarioDAO();
         DAO.create(usuario);
     }
