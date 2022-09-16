@@ -6,40 +6,40 @@ package DTO;
 
 
 public class Usuario {
-    private int id;
-    private String nome;
+private int id_usuario;
+private String nome_usuario;
+private String email_usuario;
+private String senha_senha;
 
-    public int getId() {
-        return id;
+    public int getId_usuario() {
+        return id_usuario;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId_usuario(int id_usuario) {
+        this.id_usuario = id_usuario;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNome_usuario() {
+        return nome_usuario;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNome_usuario(String nome_usuario) {
+        this.nome_usuario = nome_usuario;
     }
 
-    public String getEmail() {
-        return email;
+    public String getEmail_usuario() {
+        return email_usuario;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmail_usuario(String email_usuario) {
+        this.email_usuario = email_usuario;
     }
 
-    public String getSenha() {
-        return senha;
+    public String getSenha_senha() {
+        return senha_senha;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public void setSenha_senha(String senha_senha) {
+        this.senha_senha = senha_senha;
     }
-    private String email;
-    private String senha;
 }
