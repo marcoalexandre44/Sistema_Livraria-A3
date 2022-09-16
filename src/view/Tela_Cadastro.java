@@ -132,6 +132,10 @@ public class Tela_Cadastro extends javax.swing.JFrame {
     }//GEN-LAST:event_CampoNomeActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        if(Campo_Nome() == "" &&  Campo_Email() == "" && Campo_Senha() == "")
+        {
+        
+        }
         Apoio a = new Apoio();
         a.create(Campo_Nome(),Campo_Email(),Campo_Senha());
     }//GEN-LAST:event_jButton1ActionPerformed
