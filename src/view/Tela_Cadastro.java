@@ -6,7 +6,7 @@ package view;
 
 import DAO.UsuarioDAO;
 import DTO.Usuario;
-
+import javax.swing.JOptionPane;
 /**
  *
  * @author alefe
@@ -132,12 +132,11 @@ public class Tela_Cadastro extends javax.swing.JFrame {
     }//GEN-LAST:event_CampoNomeActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if(Campo_Nome() == "" &&  Campo_Email() == "" && Campo_Senha() == "")
-        {
-        
+        if (Campo_Nome().equals("") || Campo_Email().equals("") || Campo_Senha().equals("")) {
+            JOptionPane.showMessageDialog(rootPane, "por favor insirar os dados");
+        } else {
+            Apoio.autentica_usuario(Campo_Nome(), Campo_Email(), Campo_Senha());
         }
-        Apoio a = new Apoio();
-        a.create(Campo_Nome(),Campo_Email(),Campo_Senha());
     }//GEN-LAST:event_jButton1ActionPerformed
 
     public static void main(String args[]) {
@@ -200,8 +199,7 @@ public class Tela_Cadastro extends javax.swing.JFrame {
         return senha;
     }
 
-    public void LimpaCampos(){
-    CampoSenha.getText();
+    public void LimpaCampos() {
+        CampoSenha.getText();
     }
 }
-
