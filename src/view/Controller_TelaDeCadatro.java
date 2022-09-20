@@ -6,38 +6,59 @@ package view;
 
 import DAO.UsuarioDAO;
 import DTO.Usuario;
+import java.math.BigInteger;
 import javax.swing.JOptionPane;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class Controller_TelaDeCadatro {
 
-    public static void create(String nome,String email, String senha) {
+    public static void create(String nome, String email, String senha) {
+        
         
         Usuario usuario = new Usuario();
 
-        usuario.setNome_usuario(nome);   
+        usuario.setNome_usuario(nome);
         usuario.setEmail_usuario(email);
-        usuario.setSenha_senha(senha);
-      
+        usuario.setSenha_senha(criptografarSenha(senha));
+
         UsuarioDAO DAO = new UsuarioDAO();
         DAO.create(usuario);
     }
-    
-    public  static void  autentica_usuario(String nome , String email , String senha){
-       
-         Usuario usuario = new Usuario();
+
+    public static void autentica_usuario(String nome, String email, String senha) {
+
+        Usuario usuario = new Usuario();
 
         usuario.setEmail_usuario(email);
         usuario.setSenha_senha(senha);
-      
+
         UsuarioDAO DAO = new UsuarioDAO();
         DAO.autenticaUsuario(usuario);
-        if(DAO.autenticaUsuario(usuario)==true)
-        {
-            JOptionPane.showMessageDialog(null,"Usuario ja cadastrado");
-        }
-        else
-        {
-            create(nome,email,senha);
+        if (DAO.autenticaUsuario(usuario) == true) {
+            JOptionPane.showMessageDialog(null, "Usuario ja cadastrado");
+        } else {
+            create(nome, email, senha);
         }
 
+    }
+
+    public static String criptografarSenha(String senha) {
+            String cript = senha;
+            MessageDigest md ;
+        try 
+        {
+            md = MessageDigest.getInstance("MD5");
+            BigInteger hash = new BigInteger(1, md.digest(senha.getBytes()));
+            cript = hash.toString(16);
+        } 
+        catch (NoSuchAlgorithmException ex)
+        {
+            System.out.println("erro ao criptografar senha");
+
+        }  
+        return cript;
     }
 }
