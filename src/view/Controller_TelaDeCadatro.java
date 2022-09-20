@@ -61,4 +61,12 @@ public class Controller_TelaDeCadatro {
         }  
         return cript;
     }
+    
+   public static void chamarTelaDeLogin()
+   {
+       
+       Tela_Login tl = new Tela_Login();
+       tl.setVisible(true);
+       
+   }
 }
