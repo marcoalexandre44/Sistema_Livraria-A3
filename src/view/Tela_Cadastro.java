@@ -136,6 +136,9 @@ public class Tela_Cadastro extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "por favor insirar os dados");
         } else {
             Controller_TelaDeCadatro.autentica_usuario(Campo_Nome(), Campo_Email(), Campo_Senha());
+            limpaCampos();
+            Controller_TelaDeCadatro.chamarTelaDeLogin();
+            this.dispose();
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -199,7 +202,11 @@ public class Tela_Cadastro extends javax.swing.JFrame {
         return senha;
     }
 
-    public void LimpaCampos() {
-        CampoSenha.getText();
+    public void limpaCampos() {
+        CampoSenha.setText(" ");
+        CampoEmail.setText(" ");
+        CampoNome.setText(" ");
+                
+        
     }
 }
