@@ -135,7 +135,7 @@ public class Tela_Cadastro extends javax.swing.JFrame {
         if (Campo_Nome().equals("") || Campo_Email().equals("") || Campo_Senha().equals("")) {
             JOptionPane.showMessageDialog(rootPane, "por favor insirar os dados");
         } else {
-            Apoio.autentica_usuario(Campo_Nome(), Campo_Email(), Campo_Senha());
+            Controller_TelaDeCadatro.autentica_usuario(Campo_Nome(), Campo_Email(), Campo_Senha());
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
