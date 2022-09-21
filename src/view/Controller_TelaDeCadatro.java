@@ -18,6 +18,7 @@ public class Controller_TelaDeCadatro {
     public static void create(String nome, String email, String senha) {
         
         
+        
         Usuario usuario = new Usuario();
 
         usuario.setNome_usuario(nome);
@@ -33,13 +34,15 @@ public class Controller_TelaDeCadatro {
         Usuario usuario = new Usuario();
 
         usuario.setEmail_usuario(email);
-        usuario.setSenha_senha(senha);
 
         UsuarioDAO DAO = new UsuarioDAO();
         DAO.autenticaUsuario(usuario);
-        if (DAO.autenticaUsuario(usuario) == true) {
+        if (DAO.autenticaUsuario(usuario) == true)
+        {
             JOptionPane.showMessageDialog(null, "Usuario ja cadastrado");
-        } else {
+        } 
+        else 
+        {
             create(nome, email, senha);
         }
 
@@ -52,7 +55,7 @@ public class Controller_TelaDeCadatro {
         {
             md = MessageDigest.getInstance("MD5");
             BigInteger hash = new BigInteger(1, md.digest(senha.getBytes()));
-            cript = hash.toString(16);
+            cript = hash.toString(24);
         } 
         catch (NoSuchAlgorithmException ex)
         {
