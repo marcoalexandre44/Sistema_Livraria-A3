@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package view;
-
+import javax.swing.JOptionPane;
 /**
  *
  * @author alefe
@@ -116,8 +116,11 @@ public class Tela_Login extends javax.swing.JFrame {
     }//GEN-LAST:event_Campo_senhaActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Controller_TelaDeLogin.autentica_usuarioLogin(email(), senha());
-        
+       if(email().equals("")&& senha().equals("")){
+           JOptionPane.showMessageDialog(rootPane, "Campos em branco por favor insira os dados");
+       }else{
+       Controller_TelaDeLogin.autentica_usuarioLogin(email(), senha());
+       }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
