@@ -12,17 +12,14 @@ import java.security.NoSuchAlgorithmException;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author alefe
- */
-public class util {
 
+public class util {
+// Criptografa a senha no padrão SHA-256
     public static String criptografarSenha(String senha) {
         String cript = senha;
         MessageDigest md;
         try {
-            md = MessageDigest.getInstance("SHA-1");
+            md = MessageDigest.getInstance("SHA-256");
             BigInteger hash = new BigInteger(1, md.digest(senha.getBytes()));
             cript = hash.toString(24);
         } catch (NoSuchAlgorithmException ex) {
@@ -30,8 +27,8 @@ public class util {
         }
         return cript;
     }
-
-    public static void table(JTable JtableLivros) {
+// Insere os dados na tabela JtableLivros
+    public static JTable table(JTable JtableLivros) {
         DefaultTableModel dtmlivro = (DefaultTableModel) JtableLivros.getModel();
         dtmlivro.setNumRows(0);
         LivroDAO dao = new LivroDAO();
@@ -44,6 +41,8 @@ public class util {
                 livro.getEditora()
             });
         }
+        return JtableLivros;
+      
 
     }
 

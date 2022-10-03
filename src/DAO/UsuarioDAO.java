@@ -5,14 +5,15 @@
 package DAO;
 
 import DTO.Usuario;
-import conexao.Conexao;
+import database.ConexaoDataBase;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import view.Controller_TelaDeCadatro;
+import controllers.Controller_TelaDeCadatro;
+import controllers.util;
 
 /**
  *
@@ -25,70 +26,77 @@ public class UsuarioDAO {
 
     public void create(Usuario user) {
 
-        cn = new Conexao().conectarBD();
-        try
-        {
-            stm = cn.prepareStatement("INSERT INTO user (nome_usuario , email_usuario ,senha_usuario)VALUES(?,?,?)");
+        cn = new ConexaoDataBase().conectarBD();
+        try {
+            stm = cn.prepareStatement("INSERT INTO user_novo (nome_usuario , email_usuario ,senha_usuario)VALUES(?,?,?)");
             stm.setString(1, user.getNome_usuario());
             stm.setString(2, user.getEmail_usuario());
             stm.setString(3, user.getSenha_senha());
             stm.executeUpdate();
-        } 
-        catch (SQLException ex) 
-        {
+        } catch (SQLException ex) {
             System.out.println(" Erro ao cadrastar usuario " + ex);
         }
     }
 
     public boolean autenticaUsuario(Usuario user) {
-        cn = new Conexao().conectarBD();
+        cn = new ConexaoDataBase().conectarBD();
         boolean checar = false;
         ResultSet rs = null;
-        try 
-        {
-            String url = "select * FROM user where email_usuario = ? ";
+        try {
+            String url = "select * FROM user_novo where email_usuario = ? ";
             stm = cn.prepareStatement(url);
-            stm.setString(1, user.getEmail_usuario());        
-         
+            stm.setString(1, user.getEmail_usuario());
+
             rs = stm.executeQuery();
 
-            if (rs.next())
-            {
+            if (rs.next()) {
                 checar = true;
             }
-            } 
-            catch (SQLException ex) 
-            {
-                System.out.println("Erro em efetuar consulta" + ex);
-            }
-        return checar;
-    }
-    
-    public boolean autenticaUsuarioLogin(Usuario user) {
-        cn = new Conexao().conectarBD();
-        boolean checar = false;
-        ResultSet rs = null;
-        try 
-        {
-            String url = "select * FROM user where email_usuario = ? and senha_usuario = ?";
-            stm = cn.prepareStatement(url);
-            stm.setString(1, user.getEmail_usuario());   
-            stm.setString(2, user.getSenha_senha());
-  
-            rs = stm.executeQuery();
-
-            if (rs.next())
-            {
-                checar = true;
-            }
-           
+        } catch (SQLException ex) {
+            System.out.println("Erro em efetuar consulta" + ex);
         }
-            catch (SQLException ex) 
-            {
-                System.out.println("Erro em efetuar consulta" + ex);
-            }
         return checar;
     }
 
-    
+    public boolean autenticaUsuarioLogin(Usuario user) {
+        cn = new ConexaoDataBase().conectarBD();
+        boolean checar = false;
+        ResultSet rs = null;
+        try {
+            String url = "select * FROM user_novo where email_usuario = ? and senha_usuario = ?";
+            stm = cn.prepareStatement(url);
+            stm.setString(1, user.getEmail_usuario());
+            stm.setString(2, user.getSenha_senha());
+            rs = stm.executeQuery();
+
+            if (rs.next()) {
+                checar = true;
+            }
+
+        } catch (SQLException ex) {
+            System.out.println("Erro em efetuar consulta" + ex);
+        }
+        return checar;
+    }
+
+    public boolean verificarAdmin(Usuario usuario) {
+
+        cn = new ConexaoDataBase().conectarBD();
+        PreparedStatement pstm = null;
+        boolean verificar = false;
+        try {
+            String url = "select * FROM user_novo where email_usuario = ? and statu = 'admin'";
+            stm = cn.prepareStatement(url);  
+            stm.setString(1, usuario.getEmail_usuario());          
+            ResultSet rs = stm.executeQuery();
+           if(rs.next())
+           {
+            verificar = true;     
+           }
+
+        } catch (SQLException ex) {
+            System.out.println("Error ao verificar admin");
+        }
+        return verificar;
+    }
 }

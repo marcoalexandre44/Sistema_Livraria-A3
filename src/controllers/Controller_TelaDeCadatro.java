@@ -15,10 +15,9 @@ import java.util.logging.Logger;
 import view.Tela_Login;
 
 public class Controller_TelaDeCadatro {
-
+// Cadastra um usuario no banco de dados 
     public static void create(String nome, String email, String senha) {
-        
-        
+ 
        
         Usuario usuario = new Usuario();
 
@@ -29,7 +28,7 @@ public class Controller_TelaDeCadatro {
         UsuarioDAO DAO = new UsuarioDAO();
         DAO.create(usuario);
     }
-
+//Verfica se no banco se ja existe algum usuario cadastrado
     public static void autentica_usuario(String nome, String email, String senha) {
 
         Usuario usuario = new Usuario();
@@ -38,6 +37,7 @@ public class Controller_TelaDeCadatro {
 
         UsuarioDAO DAO = new UsuarioDAO();
         DAO.autenticaUsuario(usuario);
+        // Se retorna true o usuario ja existe e se retorna false que dizer q os parametros passados podem  ser cadastrados
         if (DAO.autenticaUsuario(usuario) == true)
         {
             JOptionPane.showMessageDialog(null, "Usuario ja cadastrado");
@@ -49,8 +49,6 @@ public class Controller_TelaDeCadatro {
 
     }
 
-    
-    
    public static void chamarTelaDeLogin()
    {
        

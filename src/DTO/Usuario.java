@@ -10,6 +10,15 @@ private int id_usuario;
 private String nome_usuario;
 private String email_usuario;
 private String senha_senha;
+private String statu;
+
+    public String getStatu() {
+        return statu;
+    }
+
+    public void setStatu(String statu) {
+        this.statu = statu;
+    }
 
     public int getId_usuario() {
         return id_usuario;

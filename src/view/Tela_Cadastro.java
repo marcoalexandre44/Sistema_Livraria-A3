@@ -134,9 +134,10 @@ public class Tela_Cadastro extends javax.swing.JFrame {
         } else {
             Controller_TelaDeCadatro.autentica_usuario(Campo_Nome(), Campo_Email(), Campo_Senha());
             limpaCampos();
-        }                                       
             Controller_TelaDeCadatro.chamarTelaDeLogin();
             this.dispose();
+        }                                       
+           
         
     }//GEN-LAST:event_jButton1ActionPerformed
 

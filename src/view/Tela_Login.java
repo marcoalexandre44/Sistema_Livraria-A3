@@ -113,14 +113,14 @@ public class Tela_Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Campo_senhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Campo_senhaActionPerformed
-        // TODO add your handling code here:
+      
     }//GEN-LAST:event_Campo_senhaActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
        if(email().equals("")&& senha().equals("")){
            JOptionPane.showMessageDialog(rootPane, "Campos em branco por favor insira os dados");
-       }else if(email() != "" && senha()!=""){
-             Controller_TelaDeLogin.autentica_usuarioLogin(email(), senha());
+       }else if(email() != "" && senha()!=""){                    
+           Controller_TelaDeLogin.autentica_usuarioLogin(email(), senha());
        }   
     }//GEN-LAST:event_jButton1ActionPerformed
 
