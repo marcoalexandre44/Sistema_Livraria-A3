@@ -13,7 +13,7 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import controllers.Controller_TelaDeCadatro;
-import controllers.util;
+import controllers.Util;
 
 /**
  *
@@ -33,6 +33,7 @@ public class UsuarioDAO {
             stm.setString(2, user.getEmail_usuario());
             stm.setString(3, user.getSenha_senha());
             stm.executeUpdate();
+            
         } catch (SQLException ex) {
             System.out.println(" Erro ao cadrastar usuario " + ex);
         }

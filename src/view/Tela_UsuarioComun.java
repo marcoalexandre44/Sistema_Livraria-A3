@@ -4,7 +4,7 @@
  */
 package view;
 
-import controllers.util;
+import controllers.Util;
 
 /**
  *
@@ -17,7 +17,7 @@ public class Tela_UsuarioComun extends javax.swing.JFrame {
      */
     public Tela_UsuarioComun() {
         initComponents();
-        util.table(JtableLivros);
+        Util.table(JtableLivros);
     }
 
     /**

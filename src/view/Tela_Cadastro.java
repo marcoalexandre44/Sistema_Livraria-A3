@@ -8,6 +8,7 @@ import controllers.Controller_TelaDeCadatro;
 import DAO.UsuarioDAO;
 import DTO.Usuario;
 import javax.swing.JOptionPane;
+
 /**
  *
  * @author alefe
@@ -21,7 +22,6 @@ public class Tela_Cadastro extends javax.swing.JFrame {
         initComponents();
     }
 
-    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -131,14 +131,14 @@ public class Tela_Cadastro extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if (Campo_Nome().equals("") || Campo_Email().equals("") || Campo_Senha().equals("")) {
             JOptionPane.showMessageDialog(rootPane, "por favor insirar os dados");
-        } else {
+        } else if (Campo_Nome() != ("") || Campo_Email() != ("") || Campo_Senha() != ("")) {
             Controller_TelaDeCadatro.autentica_usuario(Campo_Nome(), Campo_Email(), Campo_Senha());
             limpaCampos();
-            Controller_TelaDeCadatro.chamarTelaDeLogin();
+        }
+            else{
+                    Controller_TelaDeCadatro.chamarTelaDeLogin();
             this.dispose();
-        }                                       
-           
-        
+                    }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     public static void main(String args[]) {
@@ -204,6 +204,6 @@ public class Tela_Cadastro extends javax.swing.JFrame {
     public void limpaCampos() {
         CampoSenha.setText(" ");
         CampoEmail.setText(" ");
-        CampoNome.setText(" "); 
+        CampoNome.setText(" ");
     }
 }

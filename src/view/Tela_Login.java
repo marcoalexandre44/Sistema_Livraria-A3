@@ -120,7 +120,8 @@ public class Tela_Login extends javax.swing.JFrame {
        if(email().equals("")&& senha().equals("")){
            JOptionPane.showMessageDialog(rootPane, "Campos em branco por favor insira os dados");
        }else if(email() != "" && senha()!=""){                    
-           Controller_TelaDeLogin.autentica_usuarioLogin(email(), senha());
+           Controller_TelaDeLogin.autentica_usuarioLogin(email(), senha());        
+           this.dispose();
        }   
     }//GEN-LAST:event_jButton1ActionPerformed
 

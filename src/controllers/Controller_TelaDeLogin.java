@@ -23,10 +23,10 @@ public class Controller_TelaDeLogin {
         Usuario usuario = new Usuario();
         UsuarioDAO DAO = new UsuarioDAO();
         usuario.setEmail_usuario(email);
-        usuario.setSenha_senha(util.criptografarSenha(senha));
+        usuario.setSenha_senha(Util.criptografarSenha(senha));
 
         if (DAO.autenticaUsuarioLogin(usuario) == true) {
-            validarNivelDeUsuario(email,util.criptografarSenha(senha));
+            validarNivelDeUsuario(email,Util.criptografarSenha(senha));
         } else {
             JOptionPane.showMessageDialog(null, "E-mail ou senha incorretos ");
         }

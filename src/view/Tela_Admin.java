@@ -7,7 +7,7 @@ package view;
 import DAO.LivroDAO;
 import DTO.Livro;
 import controllers.Controller_TelaDoAdmin;
-import controllers.util;
+import controllers.Util;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.JOptionPane;
 
@@ -22,7 +22,7 @@ public class Tela_Admin extends javax.swing.JFrame {
      */
     public Tela_Admin() {
         initComponents();
-        util.table(JtableLivros);
+        Util.table(JtableLivros);
     }
 
     /**
@@ -163,9 +163,9 @@ public class Tela_Admin extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(127, 127, 127)
                         .addComponent(jButton2)
-                        .addGap(78, 78, 78)
+                        .addGap(75, 75, 75)
                         .addComponent(jButton1)
-                        .addGap(65, 65, 65)
+                        .addGap(68, 68, 68)
                         .addComponent(jButton3))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(58, 58, 58)
@@ -228,7 +228,7 @@ public class Tela_Admin extends javax.swing.JFrame {
         } else {
             Controller_TelaDoAdmin.atualizarDados(JtableLivros, (int) JtableLivros.getValueAt(JtableLivros.getSelectedRow(), 0),
                      titulo(), categoria(), autor(), editora());
-            util.table(JtableLivros);
+            Util.table(JtableLivros);
             limparCampos();
         }
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -252,7 +252,7 @@ public class Tela_Admin extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         if (JtableLivros.getSelectedRow() != -1) {
             Controller_TelaDoAdmin.deletarLivros(JtableLivros);
-            util.table(JtableLivros);
+            Util.table(JtableLivros);
             limparCampos();
         } else {
             JOptionPane.showMessageDialog(rootPane, "Clique em um dado da tabela para deletar");
@@ -265,7 +265,7 @@ public class Tela_Admin extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "Não é possivel adicionar novos dados pois os campos estão vazios ");
         }else{
         Controller_TelaDoAdmin.verificarLivro(titulo(), categoria(), autor(), editora());
-        util.table(JtableLivros);
+        Util.table(JtableLivros);
         limparCampos();
         }
     }//GEN-LAST:event_jButton1ActionPerformed
