@@ -5,7 +5,7 @@ import DTO.Usuario;
 import static junit.framework.Assert.assertEquals;
 import org.junit.Test;
 
-public class utilTest {
+public class UtilTest {
     
    // private util u;
     
@@ -19,7 +19,7 @@ public class utilTest {
         Usuario usuario = new Usuario("alefe gustavo" , "alefe@gmail.com.br","123");
         UsuarioDAO dao = new UsuarioDAO();
         dao.create(usuario);
-        assert
+        
        
     }
 }
