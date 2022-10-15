@@ -27,6 +27,7 @@ public class Util {
         }
         return cript;
     }
+    
 // Insere os dados na tabela JtableLivros
     public static JTable table(JTable JtableLivros) {
         DefaultTableModel dtmlivro = (DefaultTableModel) JtableLivros.getModel();
