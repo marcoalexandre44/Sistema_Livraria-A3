@@ -45,7 +45,13 @@ RNF05 O cadastro deve ser feito com: e-mail, nome, senha e telefone.
 
 ### 3.2 REQUISITOS FUNCIONAIS
 
-
+RF01 O sistema deve permitir o cadastramento e manutenção de tipos de membro.
+RF02 O sistema deve permitir o cadastramento e manutenção de tipos de livros.
+RF03 O sistema deve permitir o cadastramento e manutenção de livros.
+RF04 O sistema deve permitir o cadastramento e manutenção de estoque.
+RF05 O sistema deve permitir o cadastramento e manutenção de gênero dos livros.
+RF06 O sistema deve permitir o cadastramento e manutenção de ligação entre livro e gênero. RF05
+RF07 O sistema deve conter tela de login.
 
 #### 3.3 CASOS DE USO
 
