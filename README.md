@@ -35,9 +35,9 @@ registrem assuntos de interesse da organização ou do indivíduo.
 
 ### 2.2 TECNOLOGIAS UTILIZADAS
 
-- Netbeans - IDE
-- Java
-- MySql
+- Netbeans v12.5 - IDE
+- Java v8.0
+- MySql v8.0
 
 # 3.0 REQUISITOS DO SISTEMA
 
@@ -69,7 +69,7 @@ RF06 O sistema deve permitir o cadastramento e manutenção de ligação entre l
 
 RF07 O sistema deve conter tela de login.
 
-#### 3.3 CASOS DE USO
+### 3.3 CASOS DE USO
 
 ![Untitled Workspace (1)](https://user-images.githubusercontent.com/86306974/196167525-8822472c-9e78-497c-9860-8397c758ec4a.png)
 
@@ -78,12 +78,6 @@ RF07 O sistema deve conter tela de login.
 # 4.0 CRONOGRAMA
 
 ### 4.1 CRONOGRAMA
-
--
--
--
-
-### 4.2 ORGANIZAÇÃO DA EQUIPE
 
 -
 -
