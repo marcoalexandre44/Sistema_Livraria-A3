@@ -2,9 +2,12 @@
 
 ### 1.1 EQUIPE
 
-- MARCO ALEXANDRE;
-- PEDRO LADEIA;
-- ALEEF GUSTAVO;
+- MARCO ALEXANDRE | Documentação
+- PEDRO LADEIA | Back-End
+- ALEEF GUSTAVO | Back-End
+
+LEGENDA:
+
 
 ### 1.2 DATA DE CRIAÇÃO
 
@@ -36,11 +39,15 @@
 
 RNF01 O sistema deve ser desenvolvido em Java.
 RNF02 O sistema deve ser exclusivo para membros cadastrados.
-RFN03 O sistema deve estar online 24 h/ 7 dias por semana.
-RFN04 O sistema deve ter uma interface de fácil utilização. RNF01
+RNF03 O sistema deve estar online 24 h/ 7 dias por semana.
+RNF04 O sistema deve ter uma interface de fácil utilização. RNF01
+RNF05 O cadastro deve ser feito com: e-mail, nome, senha e telefone.
 
 ### 3.2 REQUISITOS FUNCIONAIS
 
+
+
+#### 3.3 CASOS DE USO
 
 ![Untitled Workspace (1)](https://user-images.githubusercontent.com/86306974/196167525-8822472c-9e78-497c-9860-8397c758ec4a.png)
 
