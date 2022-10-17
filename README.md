@@ -101,10 +101,13 @@ Para acessar o sistema, o usuário deverá inserir os seus dados na tela de logi
 
 Caso apareça uma mensagem "Dados inválidos" verifique se tudo foi digitado corretamente. Se estiver tudo ok, possa ser que ainda não tem cadastro no sistema, sendo assim, siga os passos da imagem abaixo:
 
-![login](https://user-images.githubusercontent.com/86306974/196175865-6ea6bc00-cb35-412f-96fb-950c32a2a4c9.png)
+![login](https://user-images.githubusercontent.com/86306974/196176595-f5d621cb-52cb-4d6f-864f-40c90b2de1fe.png)
 
+Próxima etapa é inserir os dados para cadastro.
 
+![senha](https://user-images.githubusercontent.com/86306974/196177750-825d3510-f407-4381-a784-744c089523d0.png)
 
+O usuário será redirecionado para a página de login, e basta inserir os dados informados na página de cadastro e logar no sistema.
 
 # 5.0 TESTES
 
