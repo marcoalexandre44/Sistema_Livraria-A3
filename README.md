@@ -40,9 +40,10 @@
 
 ### 3.2 REQUISITOS FUNCIONAIS
 
--
--
--
+
+![Untitled Workspace (1)](https://user-images.githubusercontent.com/86306974/196167525-8822472c-9e78-497c-9860-8397c758ec4a.png)
+
+
 
 # 4.0 CRONOGRAMA
 
