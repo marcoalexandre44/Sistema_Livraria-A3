@@ -8,6 +8,12 @@
 
 LEGENDA:
 
+Back-End: ”O back-end é tudo o que está por trás do software, que o usuário/leitor
+não tem acesso direto e não consegue interagir. “
+
+Documentação: ”Documentação é o conjunto de todos documentos, que são todas as fontes contendo informações que ajudem a tomar decisões, comuniquem decisões tomadas,
+registrem assuntos de interesse da organização ou do indivíduo.
+
 
 ### 1.2 DATA DE CRIAÇÃO
 
@@ -49,13 +55,19 @@ RNF05 O cadastro deve ser feito com: e-mail, nome, senha e telefone.
 
 ### 3.2 REQUISITOS FUNCIONAIS
 
-RF01 O sistema deve permitir o cadastramento e manutenção de tipos de membro. /br
-RF02 O sistema deve permitir o cadastramento e manutenção de tipos de livros./br
-RF03 O sistema deve permitir o cadastramento e manutenção de livros./br
-RF04 O sistema deve permitir o cadastramento e manutenção de estoque./br
-RF05 O sistema deve permitir o cadastramento e manutenção de gênero dos livros./br
-RF06 O sistema deve permitir o cadastramento e manutenção de ligação entre livro e gênero. RF05/br
-RF07 O sistema deve conter tela de login./br
+RF01 O sistema deve permitir o cadastramento e manutenção de tipos de membro.
+
+RF02 O sistema deve permitir o cadastramento e manutenção de tipos de livros.
+
+RF03 O sistema deve permitir o cadastramento e manutenção de livros.
+
+RF04 O sistema deve permitir o cadastramento e manutenção de estoque.
+
+RF05 O sistema deve permitir o cadastramento e manutenção de gênero dos livros.
+
+RF06 O sistema deve permitir o cadastramento e manutenção de ligação entre livro e gênero. RF05
+
+RF07 O sistema deve conter tela de login.
 
 #### 3.3 CASOS DE USO
 
