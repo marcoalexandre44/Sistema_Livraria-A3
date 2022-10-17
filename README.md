@@ -51,7 +51,7 @@ RNF03 O sistema deve estar online 24 h/ 7 dias por semana.
 
 RNF04 O sistema deve ter uma interface de fácil utilização. RNF01
 
-RNF05 O cadastro deve ser feito com: e-mail, nome, senha e telefone.
+RNF05 O cadastro deve ser feito com: e-mail, nome e senha.
 
 ### 3.2 REQUISITOS FUNCIONAIS
 
