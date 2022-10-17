@@ -93,8 +93,20 @@ RF07 O sistema deve conter tela de login.
 
 ![tela admin](https://user-images.githubusercontent.com/86306974/196172319-387dcb10-ee7e-4ef7-9916-ab2ae39c73b4.png)
 
+# 5.0 MANUAL DO USUÁRIO
 
-# 5.0 CONCLUSÃO
+Para acessar o sistema, o usuário deverá inserir os seus dados na tela de login.  Veja na imagem abaixo:
+
+![login](https://user-images.githubusercontent.com/86306974/196175102-447cde12-95e7-46b5-a7be-ce223617836b.png)
+
+Caso apareça uma mensagem "Dados inválidos" verifique se tudo foi digitado corretamente. Se estiver tudo ok, possa ser que ainda não tem cadastro no sistema, sendo assim, siga os passos da imagem abaixo:
+
+![login](https://user-images.githubusercontent.com/86306974/196175865-6ea6bc00-cb35-412f-96fb-950c32a2a4c9.png)
+
+
+
+
+# 5.0 TESTES
 
 -
 -
