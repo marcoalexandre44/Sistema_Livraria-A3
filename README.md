@@ -81,7 +81,7 @@ RF07 O sistema deve conter tela de login.
 
 ![tela login](https://user-images.githubusercontent.com/86306974/196172239-d9df065f-70ea-4b96-9fcc-9b47fd4f36f7.png)
 
-###4.2 TELA DE REGISTRO
+### 4.2 TELA DE REGISTRO
 
 ![tela cadastro](https://user-images.githubusercontent.com/86306974/196172259-044211ea-58c7-45c8-bdfa-69e0f2ec6686.png)
 
