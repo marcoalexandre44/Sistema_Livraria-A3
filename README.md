@@ -103,7 +103,7 @@ Caso apareça uma mensagem "Dados inválidos" verifique se tudo foi digitado cor
 
 ![login](https://user-images.githubusercontent.com/86306974/196176595-f5d621cb-52cb-4d6f-864f-40c90b2de1fe.png)
 
-Próxima etapa é inserir os dados para cadastro.
+Próxima etapa é inserir os dados para cadastro e depois clicar no botão "salvar".
 
 ![senha](https://user-images.githubusercontent.com/86306974/196177750-825d3510-f407-4381-a784-744c089523d0.png)
 
