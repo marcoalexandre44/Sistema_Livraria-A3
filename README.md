@@ -34,9 +34,10 @@
 
 ### 3.1 REQUISITOS NÃO FUNCIONAIS
 
--
--
--
+RNF01 O sistema deve ser desenvolvido em Java.
+RNF02 O sistema deve ser exclusivo para membros cadastrados.
+RFN03 O sistema deve estar online 24 h/ 7 dias por semana.
+RFN04 O sistema deve ter uma interface de fácil utilização. RNF01
 
 ### 3.2 REQUISITOS FUNCIONAIS
 
