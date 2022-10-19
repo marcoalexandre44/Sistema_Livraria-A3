@@ -2,9 +2,18 @@
 
 ### 1.1 EQUIPE
 
-- MARCO ALEXANDRE;
-- PEDRO LADEIA;
-- ALEEF GUSTAVO;
+- MARCO ALEXANDRE | Documentação
+- PEDRO LADEIA | Back-End
+- ALEEF GUSTAVO | Back-End
+
+LEGENDA:
+
+Back-End: ”O back-end é tudo o que está por trás do software, que o usuário/leitor
+não tem acesso direto e não consegue interagir. “
+
+Documentação: ”Documentação é o conjunto de todos documentos, que são todas as fontes contendo informações que ajudem a tomar decisões, comuniquem decisões tomadas,
+registrem assuntos de interesse da organização ou do indivíduo.
+
 
 ### 1.2 DATA DE CRIAÇÃO
 
@@ -26,33 +35,81 @@
 
 ### 2.2 TECNOLOGIAS UTILIZADAS
 
-- Netbeans - IDE
-- Java
-- MySql
+- Netbeans v12.5 - IDE
+- Java v8.0
+- MySql v8.0
 
-# 3.0 MATRIZ DE RISCO
+# 3.0 REQUISITOS DO SISTEMA
 
--
--
--
--
--
+### 3.1 REQUISITOS NÃO FUNCIONAIS
 
-# 4.0 ORGANIZAÇÃO DO PROJETO
+RNF01 O sistema deve ser desenvolvido em Java.
 
-### 4.1 CRONOGRAMA
+RNF02 O sistema deve ser exclusivo para membros cadastrados.
 
--
--
--
+RNF03 O sistema deve estar online 24 h/ 7 dias por semana.
 
-### 4.2 ORGANIZAÇÃO DA EQUIPE
+RNF04 O sistema deve ter uma interface de fácil utilização. RNF01
 
--
--
--
+RNF05 O cadastro deve ser feito com: e-mail, nome e senha.
 
-# 5.0 CONCLUSÃO
+### 3.2 REQUISITOS FUNCIONAIS
+
+RF01 O sistema deve permitir o cadastramento e manutenção de tipos de membro.
+
+RF02 O sistema deve permitir o cadastramento e manutenção de tipos de livros.
+
+RF03 O sistema deve permitir o cadastramento e manutenção de livros.
+
+RF04 O sistema deve permitir o cadastramento e manutenção de estoque.
+
+RF05 O sistema deve permitir o cadastramento e manutenção de gênero dos livros.
+
+RF06 O sistema deve permitir o cadastramento e manutenção de ligação entre livro e gênero. RF05
+
+RF07 O sistema deve conter tela de login.
+
+### 3.3 CASOS DE USO
+
+![Untitled Workspace (1)](https://user-images.githubusercontent.com/86306974/196167525-8822472c-9e78-497c-9860-8397c758ec4a.png)
+
+
+
+# 4.0 PROTÓTIPO
+
+### 4.1 TELA DE LOGIN
+
+![tela login](https://user-images.githubusercontent.com/86306974/196172239-d9df065f-70ea-4b96-9fcc-9b47fd4f36f7.png)
+
+### 4.2 TELA DE REGISTRO
+
+![tela cadastro](https://user-images.githubusercontent.com/86306974/196172259-044211ea-58c7-45c8-bdfa-69e0f2ec6686.png)
+
+### 4.3 TELA USUÁRIO
+
+![tela membro](https://user-images.githubusercontent.com/86306974/196172293-2735d648-501c-4388-bf61-27ad19320760.png)
+
+### 4.4 TELA USUÁRIO ADMIN
+
+![tela admin](https://user-images.githubusercontent.com/86306974/196172319-387dcb10-ee7e-4ef7-9916-ab2ae39c73b4.png)
+
+# 5.0 MANUAL DO USUÁRIO
+
+Para acessar o sistema, o usuário deverá inserir os seus dados na tela de login.  Veja na imagem abaixo:
+
+![login](https://user-images.githubusercontent.com/86306974/196175102-447cde12-95e7-46b5-a7be-ce223617836b.png)
+
+Caso apareça uma mensagem "Dados inválidos" verifique se tudo foi digitado corretamente. Se estiver tudo ok, possa ser que o usuário ainda não está cadastrado no sistema, sendo assim, siga os passos das imagens abaixo:
+
+![login](https://user-images.githubusercontent.com/86306974/196176595-f5d621cb-52cb-4d6f-864f-40c90b2de1fe.png)
+
+Próxima etapa é inserir os dados para cadastro e depois clicar no botão "salvar".
+
+![senha](https://user-images.githubusercontent.com/86306974/196177750-825d3510-f407-4381-a784-744c089523d0.png)
+
+O usuário será redirecionado para a página de login, e basta inserir os dados informados na página de cadastro e logar no sistema.
+
+# 5.0 TESTES
 
 -
 -
