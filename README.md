@@ -150,7 +150,7 @@ Para acessar o sistema, o usuário deverá inserir os seus dados na tela de logi
 
 ![login](https://user-images.githubusercontent.com/86306974/196175102-447cde12-95e7-46b5-a7be-ce223617836b.png)
 
-Caso apareça uma mensagem "Dados inválidos" verifique se tudo foi digitado corretamente. Se estiver tudo ok, possa ser que o usuário ainda não está cadastrado no sistema, sendo assim, siga os passos das imagens abaixo:
+Caso apareça uma mensagem de alerta, verifique se tudo foi digitado corretamente. Se estiver tudo ok, possa ser que o usuário ainda não está cadastrado no sistema, sendo assim, siga os passos das imagens abaixo:
 
 ![login](https://user-images.githubusercontent.com/86306974/196176595-f5d621cb-52cb-4d6f-864f-40c90b2de1fe.png)
 
