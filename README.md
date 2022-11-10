@@ -2,11 +2,13 @@
 
 "A leitura é uma fonte inesgotável de prazer, mas por incrível que pareça, a quase totalidade, não sente esta sede." (Carlos Drummond de Andrade)
 
-### 1.1 EQUIPE
+### 1.1 DESENVOLVEDORES
 
-- MARCO ALEXANDRE | Documentação
-- PEDRO LADEIA | Back-End
-- ALEEF GUSTAVO | Back-End
+ [<img src="https://avatars.githubusercontent.com/u/86306974?v=4=" width=115 > <br> <sub> Marco Alexandre </sub>](https://github.com/marcoalexandre44)  
+ 
+ [<img src="https://avatars.githubusercontent.com/u/114107276?v=4" width=115 > <br> <sub> PEDRO LADEIA </sub>](https://github.com/Peuzebul)  
+ 
+ [<img src="https://avatars.githubusercontent.com/u/93798662?v=4" width=115 > <br> <sub> ALEEF GUSTAVO </sub>](https://github.com/AlefeCma)  
 
 LEGENDA:
 
