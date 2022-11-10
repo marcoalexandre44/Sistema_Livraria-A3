@@ -25,7 +25,7 @@ registrem assuntos de interesse da organização ou do indivíduo.
 
 # 2. INTRODUÇÃO  
 
-O projeto inicialmente consiste em um sistema de livraria com cadastramento de livros realizada pelo administrador. O sistema deve permitir que o usuário se cadastre, mas apenas o administrador poderá conceder permissões, listar livros, usuários e editar estoque. Cada usuário pode ter acesso à tabela de livros e consultar a disponibilidade no estoque.  
+O projeto inicialmente consiste em um sistema de livraria com cadastramento de livros realizada pelo administrador. O sistema deve permitir que o usuário se cadastre, mas apenas o administrador poderá conceder permissões, listar livros, usuários e editar estoque. Cada usuário pode ter acesso à tabela de livros e consultar a disponibilidade.  
 
 ### 2.1 OBJETIVO DO PROJETO
 
