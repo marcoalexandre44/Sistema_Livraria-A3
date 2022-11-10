@@ -1,5 +1,7 @@
 # 1. SISTEMA LIVRARIA - A3
 
+"A leitura é uma fonte inesgotável de prazer, mas por incrível que pareça, a quase totalidade, não sente esta sede." (Carlos Drummond de Andrade)
+
 ### 1.1 EQUIPE
 
 - MARCO ALEXANDRE | Documentação
