@@ -35,9 +35,9 @@ registrem assuntos de interesse da organização ou do indivíduo.
 
 ### 2.2 TECNOLOGIAS UTILIZADAS
 
-- Netbeans v12.5 - IDE
-- Java v8.0
-- MySql v8.0
+- NetBeans IDE - v12.5
+- Java - v8.0
+- MySql - v8.0
 
 # 3.0 REQUISITOS DO SISTEMA
 
@@ -145,6 +145,17 @@ devera aparecer a mensagem de erro "livro não encontrado"
 ![tela admin](https://user-images.githubusercontent.com/86306974/196172319-387dcb10-ee7e-4ef7-9916-ab2ae39c73b4.png)
 
 # 5.0 MANUAL DO USUÁRIO
+
+Instalar o JAVA JDK e NETBEANS IDE: Windows: https://www.webmundi.com/desenvolvimento-de-sistemas/java/como-instalar-o-java-jdk-e-netbeans-ide-windows/
+                                    Linux: https://www.linuxdescomplicado.com.br/2011/05/linux-para-programadores-instalando-o-2.html
+
+Instalar o JAVA: https://www.java.com/pt-BR/download/help/download_options_pt-br.html
+
+Instalar o XAMPP: Windows: https://pt.wikihow.com/Instalar-o-XAMPP-para-Windows
+                  Linux: https://pt.wikihow.com/Instalar-o-XAMPP-no-Linux
+
+Instalar MYSQL: Windows: https://dicasdeprogramacao.com.br/como-instalar-o-mysql-no-windows/
+                Linux: http://devfuria.com.br/linux/instalando-mysql/
 
 Para acessar o sistema, o usuário deverá inserir os seus dados na tela de login.  Veja na imagem abaixo:
 
