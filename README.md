@@ -171,23 +171,31 @@ O usuário será redirecionado para a página de login, e basta inserir os dados
 
 # 6.0 ANÁLISE DO SOFTWARE
 
-Nessa análise temos o Quadro 1, onde na primeira coluna categoriza o requisito, na segunda coluna descreve o requisito, na terceira coluna temos se esse
-requisito é funcional ou não funcional e por fim na quarta coluna é respondido se esse
-determinado requisito é atendido, não atendido, não informado ou parcialmente
-atendido no software.
+Nessa análise temos as tabelas 1, 2, 3, 4, 5, 6, 7, 8, onde na primeira coluna categoriza o requisito, na segunda coluna descreve o requisito, na terceira coluna temos se esse requisito é funcional ou não funcional e por fim na quarta coluna é respondido se esse determinado requisito é atendido, não atendido, não informado ou parcialmente atendido no software.
 
+Tabela 1
 ![1](https://user-images.githubusercontent.com/86306974/201102884-f9bde36b-b20f-48d1-95a4-e6f61185b1b3.png)
+
+Tabela 2
 ![2](https://user-images.githubusercontent.com/86306974/201102940-cf02f92c-569b-4ad0-b25a-867297311438.png)
+
+Tabela 3
 ![3](https://user-images.githubusercontent.com/86306974/201102971-bfd9e727-d5e8-4521-a5e3-88596e89003b.png)
+
+Tabela 4
 ![4](https://user-images.githubusercontent.com/86306974/201103002-056b4021-c747-4454-b021-6c551928cde8.png)
+
+Tabela 5
 ![5](https://user-images.githubusercontent.com/86306974/201103026-4c4ba0ac-7e94-4d63-ab03-fcc24742ae01.png)
+
+Tabela 6
 ![6](https://user-images.githubusercontent.com/86306974/201103047-66425eba-2718-4018-bc72-1b63ba458591.png)
+
+Tabela 7
 ![7](https://user-images.githubusercontent.com/86306974/201103067-16ed5e0f-d68b-4915-9620-2e42997959a2.png)
+
+Tabela 8
 ![8](https://user-images.githubusercontent.com/86306974/201103077-7054dc27-2cf1-40d9-9517-340ce6a01824.png)
-
-
-
-
 
 
 
