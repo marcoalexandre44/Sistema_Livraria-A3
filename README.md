@@ -157,12 +157,12 @@ Instalar o JAVA:
 
 Instalar o XAMPP:   
 
-  Windows: https://pt.wikihow.com/Instalar-o-XAMPP-para-Windows..
+  Windows: https://pt.wikihow.com/Instalar-o-XAMPP-para-Windows  
   Linux: https://pt.wikihow.com/Instalar-o-XAMPP-no-Linux  
 
 Instalar MYSQL: 
 
-  Windows: https://dicasdeprogramacao.com.br/como-instalar-o-mysql-no-windows/..
+  Windows: https://dicasdeprogramacao.com.br/como-instalar-o-mysql-no-windows/  
   Linux: http://devfuria.com.br/linux/instalando-mysql/   
 
 Para acessar o sistema, o usuário deverá inserir os seus dados na tela de login.  Veja na imagem abaixo:
