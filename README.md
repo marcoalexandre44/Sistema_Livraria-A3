@@ -168,3 +168,10 @@ O usuário será redirecionado para a página de login, e basta inserir os dados
 -
 -
 -
+
+# 6.0 ANÁLISE DO SOFTWARE
+
+Nessa análise temos o Quadro 1, onde na primeira coluna categoriza o requisito, na segunda coluna descreve o requisito, na terceira coluna temos se esse
+requisito é funcional ou não funcional e por fim na quarta coluna é respondido se esse
+determinado requisito é atendido, não atendido, não informado ou parcialmente
+atendido no software.
