@@ -4,6 +4,8 @@
  */
 package DTO;
 
+import java.util.Objects;
+
 /**
  *
  * @author alefe
@@ -14,6 +16,24 @@ public class Livro {
     private String categoria;
     private String autor;
     private String editora;
+
+    public Livro(String titulo, String categoria, String autor, String editora) {
+        this.titulo = titulo;
+        this.categoria = categoria;
+        this.autor = autor;
+        this.editora = editora;
+    }
+
+    public Livro() {
+        
+    }
+    public Livro(int id, String titulo, String categoria, String autor, String editora){
+        this.id =id;
+        this.titulo = titulo;
+        this.categoria = categoria;
+        this.autor = autor;
+        this.editora = editora;
+    }
 
     public int getId() {
         return id;
@@ -54,4 +74,32 @@ public class Livro {
     public void setEditora(String editora) {
         this.editora = editora;
     }
+
+     @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Livro other = (Livro) obj;
+        if (this.id != other.id) {
+            return false;
+        }
+        if (!Objects.equals(this.titulo, other.titulo)) {
+            return false;
+        }
+        if (!Objects.equals(this.categoria, other.categoria)) {
+            return false;
+        }
+        if (!Objects.equals(this.autor, other.autor)) {
+            return false;
+        }
+            return true;
+    }
+    
 }
