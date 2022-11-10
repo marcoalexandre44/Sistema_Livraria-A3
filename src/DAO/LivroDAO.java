@@ -119,4 +119,8 @@ public class LivroDAO {
         }
         return livros;
     }
+
+    void listarDados(Livro livro) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
