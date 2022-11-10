@@ -35,7 +35,7 @@ public class Controller_TelaDeCadatro {
         DAO.autenticaUsuario(usuario);
         // Se retorna true o usuario ja existe e se retorna false que dizer q os parametros passados podem  ser cadastrados
 
-//        if (testeverificarEmail(email) == true) {
+
 
             if (DAO.autenticaUsuario(usuario) == true) {
                 JOptionPane.showMessageDialog(null, "Usuario ja cadastrado");
@@ -43,9 +43,6 @@ public class Controller_TelaDeCadatro {
                 create(nome, email, senha);
                 chamarTelaDeLogin();
             }
-//        } else {
-//            JOptionPane.showMessageDialog(null, "email invalido");
-//        }
 
     }
 
@@ -54,6 +51,21 @@ public class Controller_TelaDeCadatro {
         Tela_Login tl = new Tela_Login();
         tl.setVisible(true);
 
+    }
+    public boolean cadastro(String nome ,String email, String senha){
+     if (nome.equals("") || email.equals("") || senha.equals("")) {
+            JOptionPane.showMessageDialog(null, "por favor insirar os dados");
+         return false;
+         
+        } else if (Controller_TelaDeCadatro.testeverificarEmail(email) == true) {
+            Controller_TelaDeCadatro.autentica_usuario(nome , email , senha);
+          return true;
+          
+        } else if (Controller_TelaDeCadatro.testeverificarEmail(email) == false) {
+            JOptionPane.showMessageDialog(null, "E-mail invalido");
+            return false;
+        }
+     return false;
     }
 
     public static boolean testeverificarEmail(String email) {
