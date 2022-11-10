@@ -3,8 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package view;
+
 import controllers.Controller_TelaDeLogin;
 import javax.swing.JOptionPane;
+
 /**
  *
  * @author alefe
@@ -113,22 +115,24 @@ public class Tela_Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Campo_senhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Campo_senhaActionPerformed
-      
+
     }//GEN-LAST:event_Campo_senhaActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       if(email().equals("")&& senha().equals("")){
-           JOptionPane.showMessageDialog(rootPane, "Campos em branco por favor insira os dados");
-       }else if(email() != "" && senha()!=""){                    
-           Controller_TelaDeLogin.autentica_usuarioLogin(email(), senha());        
-           this.dispose();
-       }   
+        if (email().equals("") && senha().equals("")) {
+            JOptionPane.showMessageDialog(rootPane, "Campos em branco por favor insira os dados");
+        } else if (Controller_TelaDeLogin.autentica_usuarioLogin(email(), senha()) == true) {
+            Controller_TelaDeLogin.autentica_usuarioLogin(email(), senha());
+            this.dispose();
+        } else {
+            LimpaCampos();
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-    Tela_Cadastro tc = new Tela_Cadastro();
-    tc.setVisible(true);
-    this.dispose();
+        Tela_Cadastro tc = new Tela_Cadastro();
+        tc.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
@@ -175,15 +179,18 @@ public class Tela_Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 
-public String email()
-{
-String nome = Campo_email.getText();
+    public String email() {
+        String nome = Campo_email.getText();
         return nome;
-}
-public String senha()
-{
-String senha = Campo_senha.getText();
-        return senha;
-}
+    }
 
+    public String senha() {
+        String senha = Campo_senha.getText();
+        return senha;
+    }
+
+    public void LimpaCampos() {
+        Campo_email.setText(" ");
+        Campo_senha.setText(" ");
+    }
 }
