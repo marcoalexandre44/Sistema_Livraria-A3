@@ -129,17 +129,25 @@ public class Tela_Cadastro extends javax.swing.JFrame {
     }//GEN-LAST:event_CampoNomeActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if (Campo_Nome().equals("") || Campo_Email().equals("") || Campo_Senha().equals("")) {
-            JOptionPane.showMessageDialog(rootPane, "por favor insirar os dados");
-        } else if (Controller_TelaDeCadatro.testeverificarEmail(Campo_Email()) == true) {
-            Controller_TelaDeCadatro.autentica_usuario(Campo_Nome(), Campo_Email(), Campo_Senha());
-            limpaCampos();
+//        if (Campo_Nome().equals("") || Campo_Email().equals("") || Campo_Senha().equals("")) {
+//            JOptionPane.showMessageDialog(rootPane, "por favor insirar os dados");
+//        } else if (Controller_TelaDeCadatro.testeverificarEmail(Campo_Email()) == true) {
+//            Controller_TelaDeCadatro.autentica_usuario(Campo_Nome(), Campo_Email(), Campo_Senha());
+//            limpaCampos();
+//            this.dispose();
+//        } else if (Controller_TelaDeCadatro.testeverificarEmail(Campo_Email()) == false) {
+//            JOptionPane.showMessageDialog(rootPane, "E-mail invalido");
+//            limpaCampos();
+//        }
+        Controller_TelaDeCadatro cadastrar = new Controller_TelaDeCadatro();
+        if (cadastrar.cadastro(Campo_Nome(), Campo_Email(), Campo_Senha()) == true) {
             this.dispose();
-        } else if (Controller_TelaDeCadatro.testeverificarEmail(Campo_Email()) == false) {
-            JOptionPane.showMessageDialog(rootPane, "E-mail invalido");
+        }else{
             limpaCampos();
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
