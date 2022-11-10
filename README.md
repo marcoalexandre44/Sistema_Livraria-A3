@@ -19,19 +19,21 @@ registrem assuntos de interesse da organização ou do indivíduo.
 
 - 14/09/2022
 
-# 2. INTRODUÇÃO
+# 2. INTRODUÇÃO  
+
+O projeto inicialmente consiste em um sistema de livraria com cadastramento de livros realizada pelo administrador. O sistema deve permitir que o usuário se cadastre, mas apenas o administrador poderá conceder permissões, listar livros, usuários e editar estoque. Cada usuário pode ter acesso à tabela de livros e consultar a disponibilidade no estoque.  
 
 ### 2.1 OBJETIVO DO PROJETO
 
-- Criar um software com automação de testes unitários e de integração;
-- Testes unitários com cobertura de 70% dos métodos;
-- testes de integração usando teste dublês;
-- Criar um documento descritivo com testes funcionais de todas as funcionalidades com casos de uso;
-- Criar um software com login e cadastro de usuário;
-- Criar uma tela com uma funcionalidade simples acessível somente para usuários logados;
-- Usar banco de dados real;
-- Pode ser web ou desktop;
-- Stack de desenvolvimento a critério da equipe;
+- Criar um software com automação de testes unitários e de integração;  
+- Testes unitários com cobertura de 70% dos métodos;  
+- testes de integração usando teste dublês;  
+- Criar um documento descritivo com testes funcionais de todas as funcionalidades com casos de uso;  
+- Criar um software com login e cadastro de usuário;  
+- Criar uma tela com uma funcionalidade simples acessível somente para usuários logados;  
+- Usar banco de dados real;  
+- Pode ser web ou desktop;  
+- Stack de desenvolvimento a critério da equipe;  
 
 ### 2.2 TECNOLOGIAS UTILIZADAS
 
