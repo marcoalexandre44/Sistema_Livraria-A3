@@ -1,4 +1,4 @@
-# SUMÁRIO  
+# SUMÁRIO
 
 1. [SISTEMA LIVRARIA - A3](https://github.com/marcoalexandre44/Sistema_Livraria-A3#1-sistema-livraria---a3)  
 1.1 [DESENVOLVEDORES](https://github.com/marcoalexandre44/Sistema_Livraria-A3#11-desenvolvedores)  
@@ -327,8 +327,3 @@ TABELA 08
 ![8](https://user-images.githubusercontent.com/86306974/201103077-7054dc27-2cf1-40d9-9517-340ce6a01824.png)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
