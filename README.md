@@ -136,42 +136,80 @@ devera aparecer a mensagem de erro "livro não encontrado"
 
 # 4.0 PROTÓTIPO
 
-### 4.1 TELA DE LOGIN
+#### 4.1 TELA DE LOGIN  
 
 ![tela login](https://user-images.githubusercontent.com/86306974/196172239-d9df065f-70ea-4b96-9fcc-9b47fd4f36f7.png)
 
-### 4.2 TELA DE REGISTRO
+#### 4.2 TELA DE REGISTRO  
 
 ![tela cadastro](https://user-images.githubusercontent.com/86306974/196172259-044211ea-58c7-45c8-bdfa-69e0f2ec6686.png)
 
-### 4.3 TELA USUÁRIO
+#### 4.3 TELA USUÁRIO  
 
 ![tela membro](https://user-images.githubusercontent.com/86306974/196172293-2735d648-501c-4388-bf61-27ad19320760.png)
 
-### 4.4 TELA USUÁRIO ADMIN
+#### 4.4 TELA USUÁRIO ADMIN  
 
 ![tela admin](https://user-images.githubusercontent.com/86306974/196172319-387dcb10-ee7e-4ef7-9916-ab2ae39c73b4.png)
 
-# 5.0 MANUAL DO USUÁRIO
+# 5.0 MANUAL DO USUÁRIO  
 
-Instalar o JAVA JDK e NETBEANS IDE:  
+#### INSTALAR o JAVA JDK e NETBEANS IDE:   
 
   Windows: https://www.webmundi.com/desenvolvimento-de-sistemas/java/como-instalar-o-java-jdk-e-netbeans-ide-windows/..                                    
   Linux: https://www.linuxdescomplicado.com.br/2011/05/linux-para-programadores-instalando-o-2.html  
 
-Instalar o JAVA:   
+#### INSTALAR o JAVA:    
 
   https://www.java.com/pt-BR/download/help/download_options_pt-br.html  
 
-Instalar o XAMPP:   
+#### INSTALAR o XAMPP:    
 
   Windows: https://pt.wikihow.com/Instalar-o-XAMPP-para-Windows  
   Linux: https://pt.wikihow.com/Instalar-o-XAMPP-no-Linux  
 
-Instalar MYSQL: 
+#### INSTALAR MYSQL:  
 
   Windows: https://dicasdeprogramacao.com.br/como-instalar-o-mysql-no-windows/  
   Linux: http://devfuria.com.br/linux/instalando-mysql/   
+  
+#### INSTALAR O BEEKEEPER STUDIO:  
+
+  https://www.beekeeperstudio.io/get  
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#### CRIAR USUÁRIO ADMIN:  
+
+  insert into user_novo(nome_usuario,email_usuario,senha_usuario,statu)  
+values  
+(  
+  'useradmin',  
+  'admin@gmail.com',  
+  '959e8cmla530336a9mm65db9447753c64bb73fbli5fdeil7hl47nlhb',  
+  'admin'  
+)  
+
+#### CRIAR TABELAS:  
+
+  create database if not exists a3livraria;  
+
+create table if not exists livro(  
+id_livro int auto_increment primary key,  
+  tiulo varchar(45),  
+  categoria varchar(45),  
+  autor varchar(50),  
+  editora varchar(45)  
+);  
+create table if not exists user_novo(  
+id_usuario int auto_increment primary key,  
+  nome_usuario varchar(50),  
+  email_usuario varchar(75),  
+  senha_usuario varchar(75),  
+  statu varchar(10)  
+);  
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Para acessar o sistema, o usuário deverá inserir os seus dados na tela de login.  Veja na imagem abaixo:
 
