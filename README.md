@@ -33,8 +33,7 @@
 
 7. [ANÁLISE DO SOFTWARE](https://github.com/marcoalexandre44/Sistema_Livraria-A3#70-an%C3%A1lise-do-software)  
 
-
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # 1. SISTEMA LIVRARIA - A3
 
