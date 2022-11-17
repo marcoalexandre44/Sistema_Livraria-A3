@@ -46,8 +46,8 @@ O projeto inicialmente consiste em um sistema de livraria com cadastramento de l
 - NetBeans IDE - v12.5
 - Java - v8.0
 - MySql - v8.0
-- Xampp - v
-- Beekeeper - v
+- Xampp  
+- Beekeeper  
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
