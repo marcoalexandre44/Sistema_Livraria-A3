@@ -1,3 +1,28 @@
+# SUMÁRIO  
+
+1. [SISTEMA LIVRARIA - A3](https://github.com/marcoalexandre44/Sistema_Livraria-A3#1-sistema-livraria---a3)  
+1.1 [DESENVOLVEDORES](https://github.com/marcoalexandre44/Sistema_Livraria-A3#11-desenvolvedores)  
+1.2 [DATA DE CRIAÇÃO](https://github.com/marcoalexandre44/Sistema_Livraria-A3#12-data-de-cria%C3%A7%C3%A3o)  
+2. [INTRODUÇÃO](https://github.com/marcoalexandre44/Sistema_Livraria-A3#2-introdu%C3%A7%C3%A3o)  
+2.1 [OBJETIVO DO PROJETO](https://github.com/marcoalexandre44/Sistema_Livraria-A3#21-objetivo-do-projeto)  
+2.2 [TECNOLOGIAS UTILIZADAS](https://github.com/marcoalexandre44/Sistema_Livraria-A3#22-tecnologias-utilizadas)  
+3. [REQUISITOS DO SISTEMA](https://github.com/marcoalexandre44/Sistema_Livraria-A3#30-requisitos-do-sistema)  
+3.1 [REQUISITOS NÃO FUNCIONAIS](https://github.com/marcoalexandre44/Sistema_Livraria-A3#31-requisitos-n%C3%A3o-funcionais)  
+3.2 [REQUISITOS FUNCIONAIS](https://github.com/marcoalexandre44/Sistema_Livraria-A3#32-requisitos-funcionais)  
+3.3 [CASOS DE USO](https://github.com/marcoalexandre44/Sistema_Livraria-A3#33-casos-de-uso)  
+4. [PROTÓTIPO](https://github.com/marcoalexandre44/Sistema_Livraria-A3#40-prot%C3%B3tipo)   
+4.1 [TELA DE LOGIN](https://github.com/marcoalexandre44/Sistema_Livraria-A3#41-tela-de-login)  
+4.2 [TELA DE REGISTRO](https://github.com/marcoalexandre44/Sistema_Livraria-A3#42-tela-de-registro)  
+4.3 [TELA DE USUÁRIO](https://github.com/marcoalexandre44/Sistema_Livraria-A3#43-tela-usu%C3%A1rio)  
+4.4 [TELA DE USUÁRIO ADMIN](https://github.com/marcoalexandre44/Sistema_Livraria-A3#44-tela-usu%C3%A1rio-admin)  
+5. [MANUAL DO USUÁRIO](https://github.com/marcoalexandre44/Sistema_Livraria-A3#50-manual-do-usu%C3%A1rio)   
+5.1 [INSTALAR O JDK E NETBEANS](https://github.com/marcoalexandre44/Sistema_Livraria-A3#instalar-o-java-jdk-e-netbeans-ide)   
+5.2 [INSTALAR O JAVA](https://github.com/marcoalexandre44/Sistema_Livraria-A3#instalar-o-java)   
+5.3 []()   
+
+
+
+
 # 1. SISTEMA LIVRARIA - A3
 
 "A leitura é uma fonte inesgotável de prazer, mas por incrível que pareça, a quase totalidade, não sente esta sede." (Carlos Drummond de Andrade)
@@ -85,7 +110,7 @@ RF07 O sistema deve conter tela de login.
 
 ### 3.3 CASOS DE USO
 
-#### TELA DE LOGIN
+**TELA DE LOGIN**  
 
 O usuário deve preencher o campo de login e senha com dados válidos registrados no banco de dados e pressionar o botão "entrar" para ser direcionado a tela inicial do programa.
 
@@ -105,7 +130,7 @@ Caso o usuário preencha somente o campo de login com um login inexistente  e pr
 
 Ao pressionar o botão "registrar" o usuário será redirecionado a tela de registro.
 
-#### TELA DE REGISTRO
+**TELA DE REGISTRO**  
   
 O registro deve ser feito completando o campo de e-mail, nome e senha, clicando logo em seguida o botão 'registrar' e sendo levado ate a tela de login novamente.
 
@@ -124,7 +149,7 @@ a mensagem 'e-mail invalido'.
 Caso o usuário preencha apenas 2 campos devera aparecer uma mensagem alertando
 "preencha todos os campos"
 
-#### TELA DO ADMINISTRADOR
+**TELA DO ADMINISTRADOR**  
 
 Ao acessar a tela do administrador o usuário pode deletar, adicionar e atualizar livros no banco de dados ao preencher os campos corretamente.
 
@@ -164,32 +189,32 @@ devera aparecer a mensagem de erro "livro não encontrado"
 
 # 5.0 MANUAL DO USUÁRIO  
 
-#### INSTALAR o JAVA JDK e NETBEANS IDE:   
+#### 5.1 INSTALAR o JDK e NETBEANS:   
 
   Windows: https://www.webmundi.com/desenvolvimento-de-sistemas/java/como-instalar-o-java-jdk-e-netbeans-ide-windows/..                                    
   Linux: https://www.linuxdescomplicado.com.br/2011/05/linux-para-programadores-instalando-o-2.html  
 
-#### INSTALAR o JAVA:    
+#### 5.2 INSTALAR o JAVA:    
 
   https://www.java.com/pt-BR/download/help/download_options_pt-br.html  
 
-#### INSTALAR o XAMPP:    
+#### 5.3 INSTALAR o XAMPP:    
 
   Windows: https://pt.wikihow.com/Instalar-o-XAMPP-para-Windows  
   Linux: https://pt.wikihow.com/Instalar-o-XAMPP-no-Linux  
 
-#### INSTALAR MYSQL:  
+#### 5.4 INSTALAR MYSQL:  
 
   Windows: https://dicasdeprogramacao.com.br/como-instalar-o-mysql-no-windows/  
   Linux: http://devfuria.com.br/linux/instalando-mysql/   
   
-#### INSTALAR O BEEKEEPER STUDIO:  
+#### 5.5 INSTALAR O BEEKEEPER STUDIO:  
 
   https://www.beekeeperstudio.io/get  
   
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#### CRIAR USUÁRIO ADMIN:  
+#### 5.6 CRIAR USUÁRIO ADMIN:  
 
   insert into user_novo(nome_usuario,email_usuario,senha_usuario,statu)  
 values  
@@ -200,7 +225,7 @@ values
   'admin'  
 )  
 
-#### CRIAR TABELAS:  
+#### 5.7 CRIAR TABELAS:  
 
   create database if not exists a3livraria;  
 
@@ -221,6 +246,8 @@ id_usuario int auto_increment primary key,
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+#### 5.8 ACESSO AO SISTEMA:
+
 Para acessar o sistema, o usuário deverá inserir os seus dados na tela de login.  Veja na imagem abaixo:
 
 ![login](https://user-images.githubusercontent.com/86306974/196175102-447cde12-95e7-46b5-a7be-ce223617836b.png)
@@ -237,7 +264,7 @@ O usuário será redirecionado para a página de login, e basta inserir os dados
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# 5.0 TESTES
+# 6.0 TESTES
 
 -
 -
@@ -248,7 +275,7 @@ O usuário será redirecionado para a página de login, e basta inserir os dados
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# 6.0 ANÁLISE DO SOFTWARE
+# 7.0 ANÁLISE DO SOFTWARE
 
 Nessa análise temos as tabelas 01, 02, 03, 04, 05, 06, 07, 08, onde na primeira coluna categoriza o requisito, na segunda coluna descreve o requisito,
 na terceira coluna temos se esse requisito é funcional ou não funcional e por fim na quarta coluna é respondido se esse determinado requisito é atendido,
