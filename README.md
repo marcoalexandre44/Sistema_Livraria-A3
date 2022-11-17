@@ -3,22 +3,35 @@
 1. [SISTEMA LIVRARIA - A3](https://github.com/marcoalexandre44/Sistema_Livraria-A3#1-sistema-livraria---a3)  
 1.1 [DESENVOLVEDORES](https://github.com/marcoalexandre44/Sistema_Livraria-A3#11-desenvolvedores)  
 1.2 [DATA DE CRIAÇÃO](https://github.com/marcoalexandre44/Sistema_Livraria-A3#12-data-de-cria%C3%A7%C3%A3o)  
+
 2. [INTRODUÇÃO](https://github.com/marcoalexandre44/Sistema_Livraria-A3#2-introdu%C3%A7%C3%A3o)  
 2.1 [OBJETIVO DO PROJETO](https://github.com/marcoalexandre44/Sistema_Livraria-A3#21-objetivo-do-projeto)  
 2.2 [TECNOLOGIAS UTILIZADAS](https://github.com/marcoalexandre44/Sistema_Livraria-A3#22-tecnologias-utilizadas)  
+
 3. [REQUISITOS DO SISTEMA](https://github.com/marcoalexandre44/Sistema_Livraria-A3#30-requisitos-do-sistema)  
 3.1 [REQUISITOS NÃO FUNCIONAIS](https://github.com/marcoalexandre44/Sistema_Livraria-A3#31-requisitos-n%C3%A3o-funcionais)  
 3.2 [REQUISITOS FUNCIONAIS](https://github.com/marcoalexandre44/Sistema_Livraria-A3#32-requisitos-funcionais)  
 3.3 [CASOS DE USO](https://github.com/marcoalexandre44/Sistema_Livraria-A3#33-casos-de-uso)  
+
 4. [PROTÓTIPO](https://github.com/marcoalexandre44/Sistema_Livraria-A3#40-prot%C3%B3tipo)   
 4.1 [TELA DE LOGIN](https://github.com/marcoalexandre44/Sistema_Livraria-A3#41-tela-de-login)  
 4.2 [TELA DE REGISTRO](https://github.com/marcoalexandre44/Sistema_Livraria-A3#42-tela-de-registro)  
 4.3 [TELA DE USUÁRIO](https://github.com/marcoalexandre44/Sistema_Livraria-A3#43-tela-usu%C3%A1rio)  
 4.4 [TELA DE USUÁRIO ADMIN](https://github.com/marcoalexandre44/Sistema_Livraria-A3#44-tela-usu%C3%A1rio-admin)  
+
 5. [MANUAL DO USUÁRIO](https://github.com/marcoalexandre44/Sistema_Livraria-A3#50-manual-do-usu%C3%A1rio)   
 5.1 [INSTALAR O JDK E NETBEANS](https://github.com/marcoalexandre44/Sistema_Livraria-A3#instalar-o-java-jdk-e-netbeans-ide)   
 5.2 [INSTALAR O JAVA](https://github.com/marcoalexandre44/Sistema_Livraria-A3#instalar-o-java)   
-5.3 []()   
+5.3 [INSTALAR O XAMPP](https://github.com/marcoalexandre44/Sistema_Livraria-A3#53-instalar-o-xampp)  
+5.4 [INSTALAR O MYSQL](https://github.com/marcoalexandre44/Sistema_Livraria-A3#54-instalar-mysql)  
+5.5 [INSTALAR O BEEKEEPER STUDIO](https://github.com/marcoalexandre44/Sistema_Livraria-A3#55-instalar-o-beekeeper-studio)  
+5.6 [CRIAR USUÁRIO ADMIN](https://github.com/marcoalexandre44/Sistema_Livraria-A3#56-criar-usu%C3%A1rio-admin)  
+5.7 [CRIAR TABELAS](https://github.com/marcoalexandre44/Sistema_Livraria-A3#57-criar-tabelas)  
+5.8 [ACESSO AO SISTEMA](https://github.com/marcoalexandre44/Sistema_Livraria-A3#58-acesso-ao-sistema)  
+
+6. [TESTES](https://github.com/marcoalexandre44/Sistema_Livraria-A3#60-testes)  
+
+7. [ANÁLISE DO SOFTWARE](https://github.com/marcoalexandre44/Sistema_Livraria-A3#70-an%C3%A1lise-do-software)  
 
 
 
