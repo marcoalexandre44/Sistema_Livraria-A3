@@ -23,6 +23,8 @@ registrem assuntos de interesse da organização ou do indivíduo.
 
 - 14/09/2022
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # 2. INTRODUÇÃO  
 
 O projeto inicialmente consiste em um sistema de livraria com cadastramento de livros realizada pelo administrador. O sistema deve permitir que o usuário se cadastre, mas apenas o administrador poderá conceder permissões, listar livros, usuários e editar estoque. Cada usuário pode ter acesso à tabela de livros e consultar a disponibilidade.  
@@ -46,6 +48,8 @@ O projeto inicialmente consiste em um sistema de livraria com cadastramento de l
 - MySql - v8.0
 - Xampp - v
 - Beekeeper - v
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # 3.0 REQUISITOS DO SISTEMA
 
@@ -77,9 +81,11 @@ RF06 O sistema deve permitir o cadastramento e manutenção de ligação entre l
 
 RF07 O sistema deve conter tela de login.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### 3.3 CASOS DE USO
 
-TELA DE LOGIN
+#### TELA DE LOGIN
 
 O usuário deve preencher o campo de login e senha com dados válidos registrados no banco de dados e pressionar o botão "entrar" para ser direcionado a tela inicial do programa.
 
@@ -99,7 +105,7 @@ Caso o usuário preencha somente o campo de login com um login inexistente  e pr
 
 Ao pressionar o botão "registrar" o usuário será redirecionado a tela de registro.
 
-TELA DE REGISTRO
+#### TELA DE REGISTRO
   
 O registro deve ser feito completando o campo de e-mail, nome e senha, clicando logo em seguida o botão 'registrar' e sendo levado ate a tela de login novamente.
 
@@ -118,22 +124,24 @@ a mensagem 'e-mail invalido'.
 Caso o usuário preencha apenas 2 campos devera aparecer uma mensagem alertando
 "preencha todos os campos"
 
-TELA DO ADMINISTRADOR
+#### TELA DO ADMINISTRADOR
 
-Ao acessar a tela do administrador o usuário pode deletar, adicionar e atualizar livros no banco de dados ao preencher os campos corretamente
+Ao acessar a tela do administrador o usuário pode deletar, adicionar e atualizar livros no banco de dados ao preencher os campos corretamente.
 
-Caso o usuário deixe algum campo vazio devera aparecer a mensagem "preencha todos os campos".
+Caso o usuário deixe algum campo vazio devera aparecer a mensagem "preencha todos os campos".  
 
 Caso o usuário preencha com dados já existentes e aperte em adicionar aparecera a mensagem de erro
-"livro já existente"
+"livro já existente"  
  
 Caso o usuário preencha os dados com informações inexistente e apertar o botão de atualizar ou deletar,
-devera aparecer a mensagem de erro "livro não encontrado"
-
-![Untitled Workspace (1)](https://user-images.githubusercontent.com/86306974/196167525-8822472c-9e78-497c-9860-8397c758ec4a.png)
-
-
-
+devera aparecer a mensagem de erro "livro não encontrado"  
+  
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+  
+![Untitled Workspace (1)](https://user-images.githubusercontent.com/86306974/196167525-8822472c-9e78-497c-9860-8397c758ec4a.png)  
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
 # 4.0 PROTÓTIPO
 
 #### 4.1 TELA DE LOGIN  
@@ -151,6 +159,8 @@ devera aparecer a mensagem de erro "livro não encontrado"
 #### 4.4 TELA USUÁRIO ADMIN  
 
 ![tela admin](https://user-images.githubusercontent.com/86306974/196172319-387dcb10-ee7e-4ef7-9916-ab2ae39c73b4.png)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # 5.0 MANUAL DO USUÁRIO  
 
@@ -225,6 +235,8 @@ Próxima etapa é inserir os dados para cadastro e depois clicar no botão "salv
 
 O usuário será redirecionado para a página de login, e basta inserir os dados informados na página de cadastro e logar no sistema.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # 5.0 TESTES
 
 -
@@ -233,6 +245,8 @@ O usuário será redirecionado para a página de login, e basta inserir os dados
 -
 -
 -
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # 6.0 ANÁLISE DO SOFTWARE
 
@@ -271,6 +285,8 @@ TABELA 07
 TABELA 08
 
 ![8](https://user-images.githubusercontent.com/86306974/201103077-7054dc27-2cf1-40d9-9517-340ce6a01824.png)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
