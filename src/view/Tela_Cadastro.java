@@ -9,10 +9,7 @@ import DAO.UsuarioDAO;
 import DTO.Usuario;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author alefe
- */
+
 public class Tela_Cadastro extends javax.swing.JFrame {
 
     /**
@@ -138,7 +135,6 @@ public class Tela_Cadastro extends javax.swing.JFrame {
 //        } else if (Controller_TelaDeCadatro.testeverificarEmail(Campo_Email()) == false) {
 //            JOptionPane.showMessageDialog(rootPane, "E-mail invalido");
 //            limpaCampos();
-//        }
         Controller_TelaDeCadatro cadastrar = new Controller_TelaDeCadatro();
         if (cadastrar.cadastro(Campo_Nome(), Campo_Email(), Campo_Senha()) == true) {
             this.dispose();

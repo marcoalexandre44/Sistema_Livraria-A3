@@ -6,6 +6,7 @@ package controllers;
 
 import DAO.LivroDAO;
 import DTO.Livro;
+import java.sql.SQLException;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.JOptionPane;
@@ -13,7 +14,7 @@ import javax.swing.JOptionPane;
 public class Controller_TelaDoAdmin {
 //Cadastra os dados passados por parametros no banco de dados
 
-    public static void cadastarLivro(String titulo, String categoria, String autor, String editora) {
+    public static void cadastarLivro(String titulo, String categoria, String autor, String editora){
         Livro livro = new Livro();
         LivroDAO dao = new LivroDAO();
         livro.setTitulo(titulo);

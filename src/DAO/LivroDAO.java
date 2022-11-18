@@ -15,17 +15,16 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author alefe
- */
 public class LivroDAO {
-
     Connection cn;
+//testado
+    public boolean create(Livro livro) {
 
-    public void create(Livro livro) {
         cn = new ConexaoDataBase().conectarBD();
+
         PreparedStatement pstm;
+
+        boolean teste = false;
         String url = "Insert into livro (tiulo, categoria ,autor ,editora)values(?,?,?,?)";
         try {
             pstm = cn.prepareStatement(url);
@@ -34,31 +33,32 @@ public class LivroDAO {
             pstm.setString(3, livro.getAutor());
             pstm.setString(4, livro.getEditora());
             pstm.execute();
-
+            teste = true;
         } catch (SQLException ex) {
             System.out.println("error ao tentar cadrastar livro no banco de dados");
         }
-
+        return teste;
     }
-
-    public void delete(Livro livro) {
+//testado
+    public boolean delete(Livro livro) {
         cn = new ConexaoDataBase().conectarBD();
         PreparedStatement stm;
         String url = "delete from livro where id_livro =?";
         try {
             stm = cn.prepareStatement(url);
-            stm.setInt(1,livro.getId());
+            stm.setInt(1, livro.getId());
             stm.execute();
-
+            return true;
         } catch (SQLException ex) {
             System.out.println("error ao tentar deletar um livro do sistema");
         }
-
+        return false;
     }
-
-    public void atualizar(Livro livro) {
+//testado
+    public boolean atualizar(Livro livro) {
         cn = new ConexaoDataBase().conectarBD();
         PreparedStatement stm;
+
         String url = "UPDATE livro SET tiulo = ? , categoria = ? , autor = ?, editora = ?  where  id_livro = ?";
         try {
             stm = cn.prepareStatement(url);
@@ -68,11 +68,14 @@ public class LivroDAO {
             stm.setString(4, livro.getEditora());
             stm.setInt(5, livro.getId());
             stm.execute();
-        } catch (SQLException ex) {
-            System.out.println("error em tentar atualizar os dados no banco de dados");      
-        }
-    }
 
+            return true;
+        } catch (SQLException ex) {
+            System.out.println("error em tentar atualizar os dados no banco de dados");
+        }
+        return false;
+    }
+//testado
     public boolean autenticaLivro(Livro livro) {
         cn = new ConexaoDataBase().conectarBD();
         PreparedStatement stm;
@@ -93,7 +96,7 @@ public class LivroDAO {
         }
         return checar;
     }
-
+//testado
     public java.util.List<Livro> listarDados() {
 
         cn = new ConexaoDataBase().conectarBD();
@@ -118,9 +121,5 @@ public class LivroDAO {
             System.out.println("Erro ao tentar listar os dados do BD");
         }
         return livros;
-    }
-
-    void listarDados(Livro livro) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

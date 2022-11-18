@@ -22,10 +22,11 @@ public class Controller_TelaDeLogin {
         if (DAO.autenticaUsuarioLogin(usuario) == true) {
             validarNivelDeUsuario(email, Util.criptografarSenha(senha));
             return true;
+            
         } else {
             JOptionPane.showMessageDialog(null, "E-mail ou senha incorretos ");
-        }
-        return false;
+             return false;
+        }        
     }
 
 // Valida o nivel do usuario se for admin abre se a tela de admin se for diferente de admin abra se usuario comum

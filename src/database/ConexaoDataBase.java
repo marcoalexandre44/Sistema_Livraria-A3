@@ -15,8 +15,9 @@ import java.util.logging.Logger;
 public class ConexaoDataBase {
     Connection cn = null;
     String url = "jdbc:mysql://localhost:3306/a3Livraria?user=root&password=";
-    public Connection conectarBD(){
     
+    public Connection conectarBD(){
+   
         try {
             cn = DriverManager.getConnection(url);
         } catch (SQLException ex) {
