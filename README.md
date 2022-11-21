@@ -80,11 +80,14 @@ O projeto inicialmente consiste em um sistema de livraria com cadastramento de l
 
 ### 2.2 TECNOLOGIAS UTILIZADAS
 
-- NetBeans IDE - v12.5
-- Java - v8.0
-- MySql - v8.0
-- Xampp  
-- Beekeeper  
+- NetBeans IDE - v12.0
+- JDK - 11
+- MySql - v8.0.21
+- Xampp - v   
+- Beekeeper - v   
+- Mockito ALL - 1.8.5  
+- Junit - v4.13.2  
+- Hamcrest all - v1.3  
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
