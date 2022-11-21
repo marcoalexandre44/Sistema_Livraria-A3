@@ -207,7 +207,7 @@ devera aparecer a mensagem de erro "livro não encontrado"
 #### 5.1 INSTALAR o JDK e NETBEANS:   
 
   Windows: https://www.webmundi.com/desenvolvimento-de-sistemas/java/como-instalar-o-java-jdk-e-netbeans-ide-windows/..                                    
-  Linux: https://www.linuxdescomplicado.com.br/2011/05/linux-para-programadores-instalando-o-2.html  
+  Linux: https://www.how2shout.com/linux/3-ways-to-install-netbeans-ide-on-ubuntu-22-04-or-20-04-lts/  
 
 #### 5.2 INSTALAR o JAVA:    
 
