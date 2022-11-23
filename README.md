@@ -83,8 +83,8 @@ O projeto inicialmente consiste em um sistema de livraria com cadastramento de l
 - NetBeans IDE - v12.0
 - JDK - 11
 - MySql - v8.0.21
-- Xampp - v   
-- Beekeeper - v   
+- Xampp - v8.1.12   
+- Beekeeper Studio -   
 - Mockito ALL - 1.8.5  
 - Junit - v4.13.2  
 - Hamcrest all - v1.3  
