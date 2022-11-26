@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package controllers;
 
 import DAO.UsuarioDAO;
@@ -20,9 +17,11 @@ public class Controller_TelaDeLogin {
         usuario.setSenha_senha(Util.criptografarSenha(senha));
 
         if (DAO.autenticaUsuarioLogin(usuario) == true) {
+            
             if(validarNivelDeUsuario(email, senha,DAO)==true){
                 chamarTelaDeAdmin();
-            }else if(validarNivelDeUsuario(email, senha,DAO)==false){
+            
+            } else if(validarNivelDeUsuario(email, senha,DAO)==false){
                 chamarTelaDeComun();      
             }        
             return true;
