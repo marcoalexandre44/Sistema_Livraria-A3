@@ -10,7 +10,7 @@ import static org.mockito.Mockito.*;
 
 public class Controller_TelaDeLoginTest {
 
-    private UsuarioDAO DAO = mock(UsuarioDAO.class);
+    private final UsuarioDAO DAO = mock(UsuarioDAO.class);
 
     @Test
     public void testeparaverificaroniveldousuario() {
