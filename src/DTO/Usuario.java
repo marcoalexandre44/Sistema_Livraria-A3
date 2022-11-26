@@ -4,6 +4,8 @@
  */
 package DTO;
 
+import java.util.Objects;
+
 public class Usuario {
 
     private int id_usuario;
@@ -25,8 +27,16 @@ public class Usuario {
         this.senha_senha = senha_senha;
     }
 
+    public Usuario(String email_usuario, String senha_senha) {
+        this.email_usuario = email_usuario;
+        this.senha_senha = senha_senha;
+    }
+
     public Usuario() {
     }
+
+  
+ 
     
 
     public String getStatu() {
@@ -47,6 +57,47 @@ public class Usuario {
 
     public String getNome_usuario() {
         return nome_usuario;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 19 * hash + this.id_usuario;
+        hash = 19 * hash + Objects.hashCode(this.nome_usuario);
+        hash = 19 * hash + Objects.hashCode(this.email_usuario);
+        hash = 19 * hash + Objects.hashCode(this.senha_senha);
+        hash = 19 * hash + Objects.hashCode(this.statu);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Usuario other = (Usuario) obj;
+        if (this.id_usuario != other.id_usuario) {
+            return false;
+        }
+        if (!Objects.equals(this.nome_usuario, other.nome_usuario)) {
+            return false;
+        }
+        if (!Objects.equals(this.email_usuario, other.email_usuario)) {
+            return false;
+        }
+        if (!Objects.equals(this.senha_senha, other.senha_senha)) {
+            return false;
+        }
+        if (!Objects.equals(this.statu, other.statu)) {
+            return false;
+        }
+        return true;
     }
 
     public void setNome_usuario(String nome_usuario) {

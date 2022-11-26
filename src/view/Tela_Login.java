@@ -4,6 +4,7 @@
  */
 package view;
 
+import DAO.UsuarioDAO;
 import controllers.Controller_TelaDeLogin;
 import javax.swing.JOptionPane;
 
@@ -12,6 +13,8 @@ import javax.swing.JOptionPane;
  * @author alefe
  */
 public class Tela_Login extends javax.swing.JFrame {
+
+    UsuarioDAO DAO = new UsuarioDAO();
 
     /**
      * Creates new form Tela_Login
@@ -161,16 +164,12 @@ public class Tela_Login extends javax.swing.JFrame {
     }//GEN-LAST:event_Campo_senhaActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+
         if (email().equals("") && senha().equals("")) {
-            
             JOptionPane.showMessageDialog(rootPane, "Campos em branco por favor insira os dados");
-        } 
-        else if (Controller_TelaDeLogin.autentica_usuarioLogin(email(), senha()) == true) {
-            
-            
+        } else if (Controller_TelaDeLogin.autentica_usuarioLogin(email(), senha(),DAO) == true) {
             this.dispose();
-        }
-        else {
+        } else {
             LimpaCampos();
         }
     }//GEN-LAST:event_jButton1ActionPerformed
