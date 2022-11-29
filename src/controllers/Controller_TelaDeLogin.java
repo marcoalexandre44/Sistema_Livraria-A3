@@ -3,6 +3,7 @@ package controllers;
 
 import DAO.UsuarioDAO;
 import DTO.Usuario;
+import EXCEPTIONS.NaoFoiPossivelAutenticarUsuarioException;
 import javax.swing.JOptionPane;
 import view.Tela_Admin;
 import view.Tela_UsuarioComun;
@@ -10,7 +11,7 @@ import view.Tela_UsuarioComun;
 public class Controller_TelaDeLogin {
 
 //Verfica se existe o usuario no banco se sim ele chama o metodo validarNivelDeUsuario
-    public static boolean autentica_usuarioLogin(String email, String senha, UsuarioDAO Dao) {
+    public static boolean autentica_usuarioLogin(String email, String senha, UsuarioDAO Dao) throws NaoFoiPossivelAutenticarUsuarioException {
         Usuario usuario = new Usuario();
         UsuarioDAO DAO = Dao;
         usuario.setEmail_usuario(email);

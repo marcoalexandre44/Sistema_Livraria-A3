@@ -3,11 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/alefe/Documents/NetBeansProjects/testar/src/view/Tela_Login.java</file>
+            <file>file:/C:/Users/alefe/Documents/NetBeansProjects/testar/src/DAO/UsuarioDAO.java</file>
             <file>file:/C:/Users/alefe/Documents/NetBeansProjects/testar/test/controllers/Controller_TelaDeLoginTest.java</file>
-            <file>file:/C:/Users/alefe/Documents/NetBeansProjects/testar/test/DAO/LivroDAOTest.java</file>
-            <file>file:/C:/Users/alefe/Documents/NetBeansProjects/testar/src/controllers/Controller_TelaDeLogin.java</file>
-            <file>file:/C:/Users/alefe/Documents/NetBeansProjects/testar/src/DTO/Usuario.java</file>
+            <file>file:/C:/Users/alefe/Documents/NetBeansProjects/testar/test/DAO/UsuarioDAOTest.java</file>
+            <file>file:/C:/Users/alefe/Documents/NetBeansProjects/testar/test/controllers/Controller_TelaDeCadatroTest.java</file>
         </group>
     </open-files>
 </project-private>

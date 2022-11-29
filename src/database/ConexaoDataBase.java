@@ -21,7 +21,8 @@ public class ConexaoDataBase {
         try {
             cn = DriverManager.getConnection(url);
         } catch (SQLException ex) {
-            System.out.println("Erro ao conectar no Banco de dados" + ex);
+            System.out.println("erro na conexão" + ex);
+          
         } 
         return cn;
     } 

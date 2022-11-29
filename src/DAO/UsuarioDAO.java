@@ -5,15 +5,12 @@
 package DAO;
 
 import DTO.Usuario;
+import EXCEPTIONS.NaoFoiPossivelAutenticarUsuarioException;
 import database.ConexaoDataBase;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import controllers.Controller_TelaDeCadatro;
-import controllers.Util;
 
 /**
  *
@@ -24,7 +21,7 @@ public class UsuarioDAO {
     Connection cn;
     PreparedStatement stm;
 
-    public void create(Usuario user) {
+    public boolean create(Usuario user) {
 
         cn = new ConexaoDataBase().conectarBD();
         try {
@@ -33,10 +30,11 @@ public class UsuarioDAO {
             stm.setString(2, user.getEmail_usuario());
             stm.setString(3, user.getSenha_senha());
             stm.executeUpdate();
-            
-        } catch (SQLException ex) {
-            System.out.println(" Erro ao cadrastar usuario " + ex);
+            return true;
+        } catch (SQLException erro) {
+            System.out.println("Não foi possivél fazer cadastro " + erro);
         }
+        return false;
     }
 
     public boolean autenticaUsuario(Usuario user) {
@@ -53,13 +51,14 @@ public class UsuarioDAO {
             if (rs.next()) {
                 checar = true;
             }
+
         } catch (SQLException ex) {
             System.out.println("Erro em efetuar consulta" + ex);
         }
         return checar;
     }
 
-    public boolean autenticaUsuarioLogin(Usuario user) {
+    public boolean autenticaUsuarioLogin(Usuario user) throws NaoFoiPossivelAutenticarUsuarioException {
         cn = new ConexaoDataBase().conectarBD();
         boolean checar = false;
         ResultSet rs = null;
@@ -72,8 +71,10 @@ public class UsuarioDAO {
 
             if (rs.next()) {
                 checar = true;
+            } else {
+                System.out.println("Usuario não Cadastrado");
+                throw new NaoFoiPossivelAutenticarUsuarioException();
             }
-
         } catch (SQLException ex) {
             System.out.println("Erro em efetuar consulta" + ex);
         }
@@ -87,13 +88,12 @@ public class UsuarioDAO {
         boolean verificar = false;
         try {
             String url = "select * FROM user_novo where email_usuario = ? and statu = 'admin'";
-            stm = cn.prepareStatement(url);  
-            stm.setString(1, usuario.getEmail_usuario());          
+            stm = cn.prepareStatement(url);
+            stm.setString(1, usuario.getEmail_usuario());
             ResultSet rs = stm.executeQuery();
-           if(rs.next())
-           {
-            verificar = true;     
-           }
+            if (rs.next()) {
+                verificar = true;
+            }
 
         } catch (SQLException ex) {
             System.out.println("Error ao verificar admin");

@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 public class Controller_TelaDoAdmin {
 //Cadastra os dados passados por parametros no banco de dados
 
-    public static void cadastarLivro(String titulo, String categoria, String autor, String editora){
+    public static void cadastarLivro(String titulo, String categoria, String autor, String editora) {
         Livro livro = new Livro();
         LivroDAO dao = new LivroDAO();
         livro.setTitulo(titulo);
@@ -26,15 +26,17 @@ public class Controller_TelaDoAdmin {
 
     //Verifica se ja existe um livro cadastrado com um titulo se retorna true livro ja cadastrado 
     //se retorna false  o metodo create e chamado e o livro e cadastrado
-    public static void verificarLivro(String titulo, String categoria, String autor, String editora) {
+    public static boolean verificarLivro(String titulo, String categoria, String autor, String editora) {
         Livro livro = new Livro();
         LivroDAO dao = new LivroDAO();
         livro.setTitulo(titulo);
         if (dao.autenticaLivro(livro) == true) {
             JOptionPane.showMessageDialog(null, "Livro com este titulo ja cadatrado");
+            return true;
         } else {
             cadastarLivro(titulo, categoria, autor, editora);
             JOptionPane.showMessageDialog(null, "Livro cadastro com sucesso ");
+            return false;
         }
     }
 
