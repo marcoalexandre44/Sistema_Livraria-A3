@@ -3,7 +3,7 @@ package controllers;
 
 import DAO.UsuarioDAO;
 import DTO.Usuario;
-import EXCEPTIONS.NaoFoiPossivelAutenticarUsuarioException;
+import Exception.NaoFoiPossivelAutenticarUsuarioException;
 import javax.swing.JOptionPane;
 import view.Tela_Admin;
 import view.Tela_UsuarioComun;

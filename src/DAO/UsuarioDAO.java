@@ -5,7 +5,7 @@
 package DAO;
 
 import DTO.Usuario;
-import EXCEPTIONS.NaoFoiPossivelAutenticarUsuarioException;
+import Exception.NaoFoiPossivelAutenticarUsuarioException;
 import database.ConexaoDataBase;
 import java.sql.Connection;
 import java.sql.ResultSet;

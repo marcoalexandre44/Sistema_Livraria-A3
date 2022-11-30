@@ -2,7 +2,7 @@ package controllers;
 
 import DAO.UsuarioDAO;
 import DTO.Usuario;
-import EXCEPTIONS.NaoFoiPossivelAutenticarUsuarioException;
+import Exception.NaoFoiPossivelAutenticarUsuarioException;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;

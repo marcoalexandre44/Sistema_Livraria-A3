@@ -5,7 +5,7 @@
 package view;
 
 import DAO.UsuarioDAO;
-import EXCEPTIONS.NaoFoiPossivelAutenticarUsuarioException;
+import Exception.NaoFoiPossivelAutenticarUsuarioException;
 import controllers.Controller_TelaDeLogin;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -176,7 +176,7 @@ public class Tela_Login extends javax.swing.JFrame {
             }
         } catch (NaoFoiPossivelAutenticarUsuarioException ex) {
             System.out.println("usuario não existe no banco de dados" + ex);
-
+            JOptionPane.showMessageDialog(rootPane,"usuario não existe no banco de dados" );
             LimpaCampos();
 
         }

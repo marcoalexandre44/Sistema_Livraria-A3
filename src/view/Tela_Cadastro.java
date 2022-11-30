@@ -4,7 +4,7 @@
  */
 package view;
 
-import controllers.Controller_TelaDeCadatro;
+import controllers.Controller_TelaDeCadastro;
 import DAO.UsuarioDAO;
 import DTO.Usuario;
 import javax.swing.JOptionPane;
@@ -126,7 +126,7 @@ public class Tela_Cadastro extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
-        Controller_TelaDeCadatro cadastrar = new Controller_TelaDeCadatro();
+        Controller_TelaDeCadastro cadastrar = new Controller_TelaDeCadastro();
         String result = cadastrar.cadastro(Campo_Nome(), Campo_Email(), Campo_Senha());
         
         if (result != null) {

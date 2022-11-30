@@ -40,14 +40,16 @@ public class Controller_TelaDoAdmin {
         }
     }
 
-    public static void deletarLivros(JTable JtableLivros) {
+    public static boolean deletarLivros(JTable JtableLivros) {
         if (JtableLivros.getSelectedRow() != -1) {
 
             Livro livro = new Livro();
             LivroDAO dao = new LivroDAO();
             livro.setId((int) JtableLivros.getValueAt(JtableLivros.getSelectedRow(), 0));
             dao.delete(livro);
+            return true;
         }
+        return false;
     }
 
     public static void atualizarDados(JTable JtableLivros, int id, String titulo, String categoria, String autor, String editora) {

@@ -2,18 +2,13 @@ package controllers;
 
 import DAO.UsuarioDAO;
 import DTO.Usuario;
-import java.math.BigInteger;
 import javax.swing.JOptionPane;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import view.Tela_Login;
 
-public class Controller_TelaDeCadatro {
-// Cadastra um usuario no banco de dados 
+public class Controller_TelaDeCadastro {
+    // Cadastra um usuario no banco de dados 
 
     public static void create(String nome, String email, String senha) {
 
@@ -26,7 +21,7 @@ public class Controller_TelaDeCadatro {
         UsuarioDAO DAO = new UsuarioDAO();
         DAO.create(usuario);
     }
-    //Verfica se no banco se ja existe algum usuario cadastrado
+        //Verfica se no banco se ja existe algum usuario cadastrado
 
     public static void autentica_usuario(String nome, String email, String senha) {
         Usuario usuario = new Usuario();
@@ -35,12 +30,12 @@ public class Controller_TelaDeCadatro {
         DAO.autenticaUsuario(usuario);
         // Se retorna true o usuario ja existe e se retorna false que dizer q os parametros passados podem  ser cadastrados
 
-            if (DAO.autenticaUsuario(usuario) == true) {
-                JOptionPane.showMessageDialog(null, "Usuario ja cadastrado");
-            } else {
-                create(nome, email, senha);
-                chamarTelaDeLogin();
-            }
+        if (DAO.autenticaUsuario(usuario) == true) {
+            JOptionPane.showMessageDialog(null, "Usuario ja cadastrado");
+        } else {
+            create(nome, email, senha);
+            chamarTelaDeLogin();
+        }
 
     }
 
@@ -50,21 +45,22 @@ public class Controller_TelaDeCadatro {
         tl.setVisible(true);
 
     }
-    public String cadastro(String nome ,String email, String senha){
-        String result = null; 
-     if (nome.equals("") || email.equals("") || senha.equals("")) {
 
-         return "campos vazios";
-         
-        } else if (Controller_TelaDeCadatro.testeverificarEmail(email) == true) {
-            Controller_TelaDeCadatro.autentica_usuario(nome , email , senha);
-          return null;
-          
-        } else if (Controller_TelaDeCadatro.testeverificarEmail(email) == false) {
-           
+    public String cadastro(String nome, String email, String senha) {
+        String result = null;
+        if (nome.equals("") || email.equals("") || senha.equals("")) {
+
+            return "campos vazios";
+
+        } else if (Controller_TelaDeCadastro.testeverificarEmail(email) == true) {
+            Controller_TelaDeCadastro.autentica_usuario(nome, email, senha);
+            return null;
+
+        } else if (Controller_TelaDeCadastro.testeverificarEmail(email) == false) {
+
             return "email ou senha invallidos";
         }
-     return result;
+        return result;
     }
 
     public static boolean testeverificarEmail(String email) {

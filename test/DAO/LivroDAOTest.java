@@ -5,70 +5,42 @@
 package DAO;
 
 import DTO.Livro;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
+import controllers.Controller_TelaDoAdmin;
 import org.junit.Test;
-import org.junit.Before;
 import static org.junit.Assert.*;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
 import static org.mockito.Mockito.*;
 
 public class LivroDAOTest {
 
-    private LivroDAO dao = mock(LivroDAO.class);
+    private LivroDAO livrodao = mock(LivroDAO.class);
 
     @Test
     public void testarcreate() {
         Livro livro = new Livro("joão e o pe de feijão", "aventura", "desconhecido", "desconhecida");
-        when(dao.create(livro)).thenReturn(true);
-        assertTrue(dao.create(livro));
+        when(livrodao.create(livro)).thenReturn(true);
+        assertTrue(livrodao.create(livro));
     }
 
     @Test
     public void testarerrorcreate() {
         Livro livro = new Livro("joão e o pe de feijão", "aventura", "desconhecido", "desconhecida");
-        when(dao.create(livro)).thenReturn(false);
-        assertFalse(dao.create(livro));
+        when(livrodao.create(livro)).thenReturn(false);
+        assertFalse(livrodao.create(livro));
     }
 
     @Test
-    public void testarseosdadosrecebidosestaocorretos() {
+    public void testeparaverficarselivrojaexistenobanco() {
+        Controller_TelaDoAdmin telaDeAdmin = new Controller_TelaDoAdmin();
+        Livro livroobjt = new Livro("teste", "teste", "teste", "teste");
+        assertFalse(livrodao.create(livroobjt));
 
-        List<Livro> livros = new ArrayList();
-        livros.add(new Livro(1, "joão e o pe de feijão", "aventura", "desconhecido", "desconhecida"));
-
-        when(dao.listarDados()).thenReturn(livros);
-
-        assertEquals(dao.listarDados(), livros);
     }
 
     @Test
     public void testarodeletedolivrodao() {
         Livro livro = new Livro();
         livro.setId(1);
-        when(dao.delete(livro)).thenReturn(true);
-        assertTrue(dao.delete(livro));
-    }
-
-    @Test
-    public void testaatualizardadosnolivrodao() {
-        Livro livro = new Livro("joão e o pe de feijão", "aventura", "desconhecido", "desconhecida");
-        when(dao.atualizar(livro)).thenReturn(true);
-        assertTrue(dao.atualizar(livro));
-    }
-
-    @Test
-    public void verficaseolivrojaexistenobanco() {
-        Livro livro = new Livro("joão e o pe de feijão", "aventura", "desconhecido", "desconhecida");
-        when(dao.autenticaLivro(livro)).thenReturn(true);
-        assertTrue(dao.autenticaLivro(livro));
-    }
-    @Test
-    public void verficaseolivronaoexistenobanco() {
-        Livro livro = new Livro("joão e o pe de feijão", "aventura", "desconhecido", "desconhecida");
-        when(dao.autenticaLivro(livro)).thenReturn(false);
-        assertFalse(dao.autenticaLivro(livro));
+        when(livrodao.delete(livro)).thenReturn(true);
+        assertTrue(livrodao.delete(livro));
     }
 }

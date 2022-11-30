@@ -1,4 +1,4 @@
-package EXCEPTIONS;
+package Exception;
 
 public class NaoFoiPossivelAutenticarUsuarioException extends Exception {
 
