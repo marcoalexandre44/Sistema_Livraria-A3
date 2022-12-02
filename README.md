@@ -25,9 +25,13 @@
 5.3 [INSTALAR O XAMPP](https://github.com/marcoalexandre44/Sistema_Livraria-A3#53-instalar-o-xampp)  
 5.4 [INSTALAR O MYSQL](https://github.com/marcoalexandre44/Sistema_Livraria-A3#54-instalar-mysql)  
 5.5 [INSTALAR O BEEKEEPER STUDIO](https://github.com/marcoalexandre44/Sistema_Livraria-A3#55-instalar-o-beekeeper-studio)  
-5.6 [CRIAR USUÁRIO ADMIN](https://github.com/marcoalexandre44/Sistema_Livraria-A3#56-criar-usu%C3%A1rio-admin)  
-5.7 [CRIAR TABELAS](https://github.com/marcoalexandre44/Sistema_Livraria-A3#57-criar-tabelas)  
-5.8 [ACESSO AO SISTEMA](https://github.com/marcoalexandre44/Sistema_Livraria-A3#58-acesso-ao-sistema)  
+5.6 [INSTALAR MOCKITO](https://github.com/marcoalexandre44/Sistema_Livraria-A3#56-instalar-mockito)  
+5.7 [INSTALAR JUNIT](https://github.com/marcoalexandre44/Sistema_Livraria-A3#57-instalar-junit)  
+5.8 [INSTALAR HAMCREST](https://github.com/marcoalexandre44/Sistema_Livraria-A3#58-instalar-hamcrest)  
+  
+[CRIAR USUÁRIO ADMIN](https://github.com/marcoalexandre44/Sistema_Livraria-A3#criar-usu%C3%A1rio-admin)  
+[CRIAR TABELAS](https://github.com/marcoalexandre44/Sistema_Livraria-A3#criar-tabelas)  
+[ACESSO AO SISTEMA](https://github.com/marcoalexandre44/Sistema_Livraria-A3#acesso-ao-sistema)  
 
 6. [TESTES](https://github.com/marcoalexandre44/Sistema_Livraria-A3#60-testes)  
 
