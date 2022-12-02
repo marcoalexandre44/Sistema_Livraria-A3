@@ -297,7 +297,7 @@ O usuário será redirecionado para a página de login, e basta inserir os dados
 
 # 6.0 TESTES
 
-Ao iniciar o NetBeans aperte na primeira "File" e escolha a opção "adicionar projeto". Após adicionar o projeto, aperte com o botão direito em "Test Libraries" localizado dentro do projeto e escolha a opção "add JAR/fold", adicione o Junit, hamcrest e o mockito. Após adicionar todas as bibliotecas basta apertar com o direito nas opções dentro da pasta "Test packages" e selecionar a opção "Test file".  
+Ao iniciar o NetBeans aperte na primeira "File" e escolha a opção "adicionar projeto". Após adicionar o projeto, aperte com o botão direito em "Test Libraries" localizado dentro do projeto e escolha a opção "add JAR/fold", adicione o Junit, hamcrest e o mockito. Após adicionar todas as bibliotecas basta clicar com o botão direito nas opções dentro da pasta "Test packages" e selecionar a opção "Test file".  
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
