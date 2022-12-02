@@ -29,9 +29,9 @@
 5.7 [INSTALAR JUNIT](https://github.com/marcoalexandre44/Sistema_Livraria-A3#57-instalar-junit)  
 5.8 [INSTALAR HAMCREST](https://github.com/marcoalexandre44/Sistema_Livraria-A3#58-instalar-hamcrest)  
   
-[CRIAR USUÁRIO ADMIN](https://github.com/marcoalexandre44/Sistema_Livraria-A3#criar-usu%C3%A1rio-admin)  
-[CRIAR TABELAS](https://github.com/marcoalexandre44/Sistema_Livraria-A3#criar-tabelas)  
-[ACESSO AO SISTEMA](https://github.com/marcoalexandre44/Sistema_Livraria-A3#acesso-ao-sistema)  
+  -  [CRIAR USUÁRIO ADMIN](https://github.com/marcoalexandre44/Sistema_Livraria-A3#criar-usu%C3%A1rio-admin)  
+  - [CRIAR TABELAS](https://github.com/marcoalexandre44/Sistema_Livraria-A3#criar-tabelas)  
+  - [ACESSO AO SISTEMA](https://github.com/marcoalexandre44/Sistema_Livraria-A3#acesso-ao-sistema)  
 
 6. [TESTES](https://github.com/marcoalexandre44/Sistema_Livraria-A3#60-testes)  
 
