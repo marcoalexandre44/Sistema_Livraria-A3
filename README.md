@@ -227,9 +227,21 @@ devera aparecer a mensagem de erro "livro não encontrado"
 
   https://www.beekeeperstudio.io/get  
   
+#### 5.6 INSTALAR MOCKITO  
+
+  http://www.java2s.com/Code/Jar/m/Downloadmockitoall185jar.htm  
+
+#### 5.7 INSTALAR JUNIT
+
+  https://jar-download.com/artifacts/junit/junit/4.13.2
+
+#### 5.8 INSTALAR HAMCREST
+
+  https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all/1.3
+  
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#### 5.6 CRIAR USUÁRIO ADMIN:  
+#### CRIAR USUÁRIO ADMIN:  
 
   insert into user_novo(nome_usuario,email_usuario,senha_usuario,statu)  
 values  
@@ -240,7 +252,7 @@ values
   'admin'  
 )  
 
-#### 5.7 CRIAR TABELAS:  
+#### CRIAR TABELAS:  
 
   create database if not exists a3livraria;  
 
@@ -261,7 +273,7 @@ id_usuario int auto_increment primary key,
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#### 5.8 ACESSO AO SISTEMA:
+#### ACESSO AO SISTEMA:
 
 Para acessar o sistema, o usuário deverá inserir os seus dados na tela de login.  Veja na imagem abaixo:
 
