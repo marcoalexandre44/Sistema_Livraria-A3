@@ -37,7 +37,7 @@
 
 7. [ANÁLISE DO SOFTWARE](https://github.com/marcoalexandre44/Sistema_Livraria-A3#70-an%C3%A1lise-do-software)  
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<hr>
 
 # 1. SISTEMA LIVRARIA - A3
 
@@ -64,7 +64,7 @@ registrem assuntos de interesse da organização ou do indivíduo.
 
 - 14/09/2022
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<hr>
 
 # 2. INTRODUÇÃO  
 
@@ -93,7 +93,7 @@ O projeto inicialmente consiste em um sistema de livraria com cadastramento de l
 - Junit - v4.13.2  
 - Hamcrest all - v1.3  
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<hr>
 
 # 3.0 REQUISITOS DO SISTEMA
 
@@ -125,7 +125,7 @@ RF06 O sistema deve permitir o cadastramento e manutenção de ligação entre l
 
 RF07 O sistema deve conter tela de login.
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<hr>
 
 ### 3.3 CASOS DE USO
 
@@ -180,11 +180,11 @@ Caso o usuário preencha com dados já existentes e aperte em adicionar aparecer
 Caso o usuário preencha os dados com informações inexistente e apertar o botão de atualizar ou deletar,
 devera aparecer a mensagem de erro "livro não encontrado"  
   
------------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
+<hr> 
   
 ![Untitled Workspace (1)](https://user-images.githubusercontent.com/86306974/196167525-8822472c-9e78-497c-9860-8397c758ec4a.png)  
   
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<hr>
   
 # 4.0 PROTÓTIPO
 
@@ -204,7 +204,7 @@ devera aparecer a mensagem de erro "livro não encontrado"
 
 ![tela admin](https://user-images.githubusercontent.com/86306974/196172319-387dcb10-ee7e-4ef7-9916-ab2ae39c73b4.png)
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<hr>
 
 # 5.0 MANUAL DO USUÁRIO  
 
@@ -243,7 +243,7 @@ devera aparecer a mensagem de erro "livro não encontrado"
 
   https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all/1.3
   
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<hr>
 
 #### CRIAR USUÁRIO ADMIN:  
 
@@ -275,7 +275,7 @@ id_usuario int auto_increment primary key,
   statu varchar(10)  
 );  
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<hr>
 
 #### ACESSO AO SISTEMA:
 
@@ -293,13 +293,13 @@ Próxima etapa é inserir os dados para cadastro e depois clicar no botão "salv
 
 O usuário será redirecionado para a página de login, e basta inserir os dados informados na página de cadastro e logar no sistema.
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<hr>
 
 # 6.0 TESTES
 
 Ao iniciar o NetBeans aperte na primeira "File" e escolha a opção "adicionar projeto". Após adicionar o projeto, aperte com o botão direito em "Test Libraries" localizado dentro do projeto e escolha a opção "add JAR/fold", adicione o Junit, hamcrest e o mockito. Após adicionar todas as bibliotecas basta clicar com o botão direito nas opções dentro da pasta "Test packages" e selecionar a opção "Test file".  
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<hr>
 
 # 7.0 ANÁLISE DO SOFTWARE
 
@@ -339,4 +339,4 @@ TABELA 08
 
 ![8](https://user-images.githubusercontent.com/86306974/201103077-7054dc27-2cf1-40d9-9517-340ce6a01824.png)
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<hr>
