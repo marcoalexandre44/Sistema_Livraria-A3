@@ -45,11 +45,17 @@
 
 ### 1.1 DESENVOLVEDORES
 
- [<img src="https://avatars.githubusercontent.com/u/86306974?v=4=" width=115 > <br> <sub> Marco Alexandre - Documentação </sub>](https://github.com/marcoalexandre44)  
+ [<img src="https://avatars.githubusercontent.com/u/86306974?v=4=" width=115 > 
+ <br>
+ <sub> Marco Alexandre - Documentação </sub>](https://github.com/marcoalexandre44)  
  
- [<img src="https://avatars.githubusercontent.com/u/114107276?v=4" width=115 > <br> <sub> PEDRO LADEIA - Back-End </sub>](https://github.com/Peuzebul)  
+ [<img src="https://avatars.githubusercontent.com/u/114107276?v=4" width=115 >
+ <br>
+ <sub> PEDRO LADEIA - Back-End </sub>](https://github.com/Peuzebul)  
  
- [<img src="https://avatars.githubusercontent.com/u/93798662?v=4" width=115 > <br> <sub> ALEEF GUSTAVO - Back-End </sub>](https://github.com/AlefeCma)  
+ [<img src="https://avatars.githubusercontent.com/u/93798662?v=4" width=115 >
+ <br>
+ <sub> ALEEF GUSTAVO - Back-End </sub>](https://github.com/AlefeCma)  
 
 LEGENDA:
 
