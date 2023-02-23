@@ -216,38 +216,38 @@ devera aparecer a mensagem de erro "livro não encontrado"
 
 #### 5.1 INSTALAR o JDK e NETBEANS:   
 
-  Windows: https://www.webmundi.com/desenvolvimento-de-sistemas/java/como-instalar-o-java-jdk-e-netbeans-ide-windows/..                                    
-  Linux: https://www.how2shout.com/linux/3-ways-to-install-netbeans-ide-on-ubuntu-22-04-or-20-04-lts/  
+  <a target="_blank" href="https://www.webmundi.com/desenvolvimento-de-sistemas/java/como-instalar-o-java-jdk-e-netbeans-ide-windows/">Windows</a>  
+  <a target="_blank" href="https://www.how2shout.com/linux/3-ways-to-install-netbeans-ide-on-ubuntu-22-04-or-20-04-lts/">Linux</a>     
 
 #### 5.2 INSTALAR o JAVA:    
 
-  https://www.java.com/pt-BR/download/help/download_options_pt-br.html  
+  <a target="_blank" href="https://www.java.com/pt-BR/download/help/download_options_pt-br.html">Java</a>  
 
 #### 5.3 INSTALAR o XAMPP:    
 
-  Windows: https://pt.wikihow.com/Instalar-o-XAMPP-para-Windows  
-  Linux: https://pt.wikihow.com/Instalar-o-XAMPP-no-Linux  
+  <a target="_blank" href="https://pt.wikihow.com/Instalar-o-XAMPP-para-Windows">Windows</a>  
+  <a target="_blank" href="https://pt.wikihow.com/Instalar-o-XAMPP-no-Linux">Linux</a>    
 
 #### 5.4 INSTALAR MYSQL:  
 
-  Windows: https://dicasdeprogramacao.com.br/como-instalar-o-mysql-no-windows/  
-  Linux: http://devfuria.com.br/linux/instalando-mysql/   
+  <a target="_blank" href="https://dicasdeprogramacao.com.br/como-instalar-o-mysql-no-windows/">Windows</a>  
+  <a target="_blank" href="http://devfuria.com.br/linux/instalando-mysql/">Linux</a>     
   
 #### 5.5 INSTALAR O BEEKEEPER STUDIO:  
 
-  https://www.beekeeperstudio.io/get  
+<a target="_blank" href="https://www.beekeeperstudio.io/get  ">Beekeeper</a>
   
 #### 5.6 INSTALAR MOCKITO  
 
-  http://www.java2s.com/Code/Jar/m/Downloadmockitoall185jar.htm  
+<a target="_blank" href="http://www.java2s.com/Code/Jar/m/Downloadmockitoall185jar.htm">Mockito</a>  
 
 #### 5.7 INSTALAR JUNIT
 
-  https://jar-download.com/artifacts/junit/junit/4.13.2
+<a target="_blank" href="https://jar-download.com/artifacts/junit/junit/4.13.2">JUnit</a>
 
 #### 5.8 INSTALAR HAMCREST
 
-  https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all/1.3
+<a target="_blank" href="https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all/1.3">Hamcrest</a>
   
 <hr>
 
